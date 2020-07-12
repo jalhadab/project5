@@ -8,16 +8,16 @@
 
 ## Classes and relationships
 - A college student has 
-	-name 
-	-major 
-	-photo 
-	-about two decades of past experience of life
+	- name 
+	- major 
+	- photo 
+	- about two decades of past experience of life
 		- any remarkable time / move in past 20-year life
 		- education experience
-	-taken some major courses
+	- taken some major courses
 		- a list of major courses
 - Person has 
-	-hobby
+	- hobby
 		- what you like to do in your spare time? 
 
 ## choreography
