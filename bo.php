@@ -28,26 +28,26 @@ include "inc/html-top.php";
 				</div>
 
 			<h2>Early Years</h2>
-			<p>I was born in Huoshan - a county with a reservoir and a winery. I grow up at bottom of the reservoir. Later, I was sent to a boarding school at Hefei - the captical city in the province. I took my middle school and high school there. After finishing second year of the high school, for some reasons, I quit the school. Then I come to the Unites States. I took 1-year language program at UIS, and 2-year college life in SLU. Finally, I transferred to UR in Spring 2020.</p>
-			<h3>Education background</h3>
-				<ol>
-					<li>
-						1999-2016:
-						<ul><li>Regular Chinese Schools</li></ul>
-					</li>
-					<li>
-						2016-2017:
-						<ul><li>English as second Language Program in University of Illinions at Springfield</li></ul>
-					</li>
-					<li>
-						2017-2019:
-						<ul><li>Bachelor of Computer Science at Saint Louis University</li></ul>
-					</li>
-					<li>
-						2020-Now:
-						<ul><li>Bachelor of Computer Science at University of Rochester</li></ul>
-					</li>
-				</ol>
+				<p>I was born in Huoshan - a county with a reservoir and a winery. I grow up at bottom of the reservoir. Later, I was sent to a boarding school at Hefei - the captical city in the province. I took my middle school and high school there. After finishing second year of the high school, for some reasons, I quit the school. Then I come to the Unites States. I took 1-year language program at UIS, and 2-year college life in SLU. Finally, I transferred to UR in Spring 2020.</p>
+				<h3>Education background</h3>
+					<ol>
+						<li>
+							1999-2016:
+							<ul><li>Regular Chinese Schools</li></ul>
+						</li>
+						<li>
+							2016-2017:
+							<ul><li>English as second Language Program in University of Illinions at Springfield</li></ul>
+						</li>
+						<li>
+							2017-2019:
+							<ul><li>Bachelor of Computer Science at Saint Louis University</li></ul>
+						</li>
+						<li>
+							2020-Now:
+							<ul><li>Bachelor of Computer Science at University of Rochester</li></ul>
+						</li>
+					</ol>
 
 
 			<h2>Major Course List</h2>
