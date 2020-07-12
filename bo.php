@@ -18,38 +18,39 @@ include "inc/html-top.php";
 	<div class="background">
 		<div class="container">
 		<article>
-			<h2>Self Introduction</h2>
-				<p>I am a rising junior student in University of Rochester. From 2017 to 2019, I was a undergradate student at Saint Louis University in Missouri. In 2020 Spring, I transfered to University of Rochester (UR) and keep pursuing my Bachelor degree of Computer Science. </p>
+			<h2>Introduction</h2>
+				<figure class="intro-selfie">
+					<img src="images/bo-selfie.jpg" alt="Bo's selfie">
+				</figure>
+
+				<div class="intro-container">
+					<p>My name is Bo Wu. I am a rising junior student in University of Rochester majoring in Computer Science. Before UR, I spend two years of my college life at Saint Louis Unversity in Missouri. I am also an international student from Anhui, China. I am passionate about video games and many things associated with games since I was in my primary school.</p>
+				</div>
+
+			<h2>Early Years</h2>
+			<p>I was born in Huoshan - a county with a reservoir and a winery. I grow up at bottom of the reservoir. Later, I was sent to a boarding school at Hefei - the captical city in the province. I took my middle school and high school there. After finishing second year of the high school, for some reasons, I quit the school. Then I come to the Unites States. I took 1-year language program at UIS, and 2-year college life in SLU. Finally, I transferred to UR in Spring 2020.</p>
+			<h3>Education background</h3>
+				<ol>
+					<li>
+						1999-2016:
+						<ul><li>Regular Chinese Schools</li></ul>
+					</li>
+					<li>
+						2016-2017:
+						<ul><li>English as second Language Program in University of Illinions at Springfield</li></ul>
+					</li>
+					<li>
+						2017-2019:
+						<ul><li>Bachelor of Computer Science at Saint Louis University</li></ul>
+					</li>
+					<li>
+						2020-Now:
+						<ul><li>Bachelor of Computer Science at University of Rochester</li></ul>
+					</li>
+				</ol>
 
 
-			<h2>Education Background</h2>
-			<ol>
-				<li>
-					1999-2016:
-					<ul><li>Regular Chinese Schools</li></ul>
-				</li>
-				<li>
-					2016-2017:
-					<ul><li>English as second Language Program in University of Illinions at Springfield</li></ul>
-				</li>
-				<li>
-					2017-2019:
-					<ul><li>Bachelor of Computer Science at Saint Louis University</li></ul>
-				</li>
-				<li>
-					2020-Now:
-					<ul><li>Bachelor of Computer Science at University of Rochester</li></ul>
-				</li>
-			</ol>
-
-
-
-			<h2>Hobby</h2>
-			<p>I love video games. In my spare time, gaming is the main entertainment activity. I have played, or watched, or known all the famous video games over the past 5 years. It does help me have my own judgement about what kind of games is fun and good for me. Besides video game news, I also pay attention to electronic product including iPhone, Macbook, video cards and game consoles. I think the most notable product in 2020 is Playstation 5 and Xbox Series X, which marks the beginning of 4K age.</p>
-		</article>
-
-		<aside>
-			<h2>Computer Science Course Lists</h2>
+			<h2>Major Course List</h2>
 				<ol>
 					<li>
 						In Saint Louis University (2017-2019):
@@ -71,10 +72,14 @@ include "inc/html-top.php";
 						</ol>
 					</li>
 				</ol>
-		</aside>
+
+
+			<h2>Hobby</h2>
+				<p>In my spare time, gaming is the main entertainment activity. I love these dedicate video games. I had been addicted to it for a long period since the first time I played it during primary school. As I grow up, I start to become more self-discipline and play more and more games. It does help me have my own judgement about what kind of games is fun and good for me. Because of this hobby, I take computer science major in hope of becoming a video game developer in the future. Besides video games, I also pay attention to electronic product including phones, video cards and game consoles. I think the most notable product in 2020 is Playstation 5 and Xbox Series X, which mark the beginning of 4K age.</p>
+		</article>
 
 		<footer>
-			<p>CSC 174: Advanced Front-end Web - Project 1</p>
+			<p>CSC 174: Advanced Front-end Web - Project 2</p>
 		</footer>
 
 		</div> <!-- center container -->

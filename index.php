@@ -11,11 +11,11 @@ include "inc/html-top.php";
 <body>
 	<?php include "inc/nav.php"; ?>
 	<header>
-		<h1>City-team: London</h1>
+		<h1>City-team: Seoul</h1>
 		<section>
-			<p>Information Architect: Qi Miao</p>
-			<p>Visual Designer: Elise Frelinger</p>
-			<p>Technician: Bo Wu</p>
+			<div>Bo Wu</div>
+			<div>Emely Rosa</div>
+			<div>Eun Lim Kim</div>
 		</section>
 	</header>
 
@@ -24,27 +24,33 @@ include "inc/html-top.php";
 		<div class="container">
 			<article>
 				<div class="column_1">
-					<h2>Qi Miao - Information Architect</h2>
-					<img src="images/pic.jpg" alt="Qi's photo">
+					<figure>
+						<img src="images/bo-selfie.jpg" alt="Bo's photo">
+					</figure>
+					<h2>Bo Wu</h2>
+					<div class="major">Rising Junior</div>
 					<div class="major">Major in Computer Science</div>
-					<div class="major">Major in Digital Media Studies</div>
-					<a href = "http://csc174.org/lab01/qmiao3/index.php">View Personal Website</a>
+					<a href = "bo.php">Know More...</a>
 				</div>
 
 				<div class="column_2">
-					<h2>Elise Frelinger - Visual Designer</h2>
-		            <img src="images/elise_picture.jpg" alt="Elise's photo">
-					<div class="major">Major in Film & Media Studies</div>
-					<div class="major">Minor in Brain & Cognitive Science, History, and Computer Science</div>
-					<a href = "http://csc174.org/lab01/efreling/lab01/index.php">View Personal Website</a>
+					<figure>
+		            	<img src="images/emely.jpg" alt="Emely's photo">
+		        	</figure>
+		        	<h2>Emely Rosa</h2>
+					<div class="major">xxx</div>
+					<div class="major">xxxxx</div>
+					<a href = "emely.php">Know More...</a>
 				</div>
 
 				<div class="column_3">
-					<h2>Bo Wu - Technician</h2>
-					<img src="images/bo-selfie.jpg" alt="Bo's photo">
-					<div class="major">Rising Junior</div>
-					<div class="major">Major in Computer Science</div>
-					<a href = "http://csc174.org/lab01/bwu18/index.php">View Personal Website</a>
+					<figure>
+		            	<img src="images/eunlimkim.jpg" alt="Kim's photo">
+		        	</figure>
+		        	<h2>Eun Lim Kim</h2>
+					<div class="major">xxx</div>
+					<div class="major">xxxxx</div>
+					<a href = "kim.php">Know More...</a>
 				</div>
 			</article>
 
