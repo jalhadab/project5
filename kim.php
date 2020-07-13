@@ -25,7 +25,7 @@ include "inc/html-top.php";
 				</div>
 
 				<h2>Early Years</h2>
-				<p> I was born in Daegu, South Korea and moved to Ulsan. After living in Ulsan for 7 years, my parents decided to move to Busan for better education. I went elementary school and middle school in Busan then I told my parents that I want to study in the United States. In 2012, I left South Korea and started to study in Rhode Island. I met most of my good friends during that time.</p>
+					<p> I was born in Daegu, South Korea and moved to Ulsan. After living in Ulsan for 7 years, my parents decided to move to Busan for better education. I went elementary school and middle school in Busan then I told my parents that I want to study in the United States. In 2012, I left South Korea and started to study in Rhode Island. I met most of my good friends during that time.</p>
 
 					<h3>Education background</h3>
 						<ol>
@@ -47,28 +47,24 @@ include "inc/html-top.php";
 							</li>
 						</ol>
 
-						<h2>Major Course List</h2>
-				
+				<h2>Major Course List</h2>
+					Univesity of Rochester (2017-2020):
+					<ol>
+						<li>CSC 161: INTRO TO PROGRAMMING</li>
+						<li>CSC 170: INTRO TO WEB DEVELOPMENT</li>
+						<li>CSC 171: INTRO TO COMPUTER SCIENCE</li>
+						<li>CSC 172: DATA STRUCTURES & ALGORITHMS</li>
+						<li>CSC 173: COMPUTATION & FORMAL SYSTEMS</li>
+						<li>CSC 174: ADV FRONT END WEB DEVELOPMNT</li>
+						<li>CSC 186: VIDEO GAME DEVELOPMENT</li>	
+						<li>CSC 210: WEB PROGRAMMING</li>
+						<li>CSC 212: HUMAN COMPUTER INTERACTION</li>
+						<li>CSC 214: MOBILE APP DEVELOPMENT</li>
+						<li>CSC 242: ARTIFICIAL INTELLIGENCE</li>
+					</ol>
 
-					<li>
-						Univesity of Rochester (2017-2020):
-						<ol>
-							<li>CSC 161: INTRO TO PROGRAMMING</li>
-							<li>CSC 170: INTRO TO WEB DEVELOPMENT</li>
-							<li>CSC 171: INTRO TO COMPUTER SCIENCE</li>
-							<li>CSC 172: DATA STRUCTURES & ALGORITHMS</li>
-							<li>CSC 173: COMPUTATION & FORMAL SYSTEMS</li>
-							<li>CSC 174: ADV FRONT END WEB DEVELOPMNT</li>
-							<li>CSC 186: VIDEO GAME DEVELOPMENT</li>	
-							<li>CSC 210: WEB PROGRAMMING</li>
-							<li>CSC 212: HUMAN COMPUTER INTERACTION</li>
-							<li>CSC 214: MOBILE APP DEVELOPMENT</li>
-							<li>CSC 242: ARTIFICIAL INTELLIGENCE</li>
-						</ol>
-					</li>
-
-					<h2>Hobby</h2>
-				<p>In United States, I usually watch movie with my friends and cook. I love Science Fiction, action, and comic. I try to cook various kind including simple italian food, korean traditional dishes and typical brunch menu. In Korea, I mostly spend time with my dog, Abong (corgi). I usually walk him for at least one hour but he never gets enough of it. I also love trying new restaurants and adding good ones to my favorite restaurant list.</p>
+				<h2>Hobby</h2>
+					<p>In United States, I usually watch movie with my friends and cook. I love Science Fiction, action, and comic. I try to cook various kind including simple italian food, korean traditional dishes and typical brunch menu. In Korea, I mostly spend time with my dog, Abong (corgi). I usually walk him for at least one hour but he never gets enough of it. I also love trying new restaurants and adding good ones to my favorite restaurant list.</p>
 		</article>
 
 		<footer>

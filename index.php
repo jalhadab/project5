@@ -15,7 +15,7 @@ include "inc/html-top.php";
 		<section>
 			<div>Bo Wu</div>
 			<div>Emely Rosa</div>
-			<div>Eun Lim Kim</div>
+			<div>EunLim Kim</div>
 		</section>
 	</header>
 
@@ -38,8 +38,8 @@ include "inc/html-top.php";
 		            	<img src="images/emely.jpg" alt="Emely's photo">
 		        	</figure>
 		        	<h2>Emely Rosa</h2>
-					<div class="major">xxx</div>
-					<div class="major">xxxxx</div>
+					<div class="major">Rising Senior</div>
+					<div class="major">Major in Computer Science</div>
 					<a href = "emely.php">Know More...</a>
 				</div>
 
@@ -48,8 +48,8 @@ include "inc/html-top.php";
 		            	<img src="images/eunlimkim.jpg" alt="Kim's photo">
 		        	</figure>
 		        	<h2>Eun Lim Kim</h2>
-					<div class="major">xxx</div>
-					<div class="major">xxxxx</div>
+					<div class="major">Rising senior</div>
+					<div class="major">Major in Computer Science</div>
 					<a href = "kim.php">Know More...</a>
 				</div>
 			</article>
