@@ -1,5 +1,5 @@
-<?php include "inc/html-top.php";?>
-</head>
+<?php include "inc/html-top.php"?>
+
 <body>
 <header>
 	<h1>City-team: Seoul</h1>
@@ -45,6 +45,6 @@
 		</footer>
 		</div><!-- used for center container -->
 	</div>
-	<?php include "inc/scripts.php" ?>
+	<?php include "inc/scripts.php"?>
 </body>
 </html>
