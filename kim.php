@@ -1,11 +1,7 @@
-<?php 
-include "inc/html-top.php";
-?>
-
-</head>
+<?php include "inc/html-top.php"?>
 
 		<body>
-			<?php include "inc/nav.php"; ?>
+			<?php include "inc/nav.php"?>
 
 			<header>
 			<h1>Eunlim Kim</h1>
@@ -74,6 +70,6 @@ include "inc/html-top.php";
 		</div> <!-- center container -->
 	</div><!--  background container -->
 
-		<?php include "inc/scripts.php"; ?>
+		<?php include "inc/scripts.php"?>
 	</body>
 </html>

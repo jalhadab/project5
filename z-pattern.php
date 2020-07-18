@@ -1,4 +1,3 @@
-<?php $customCSS="<link rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css'>" ?>
 <?php include "inc/html-top.php";?>
 	<body class="z-pattern">
 		<header class="persistent">
