@@ -1,6 +1,5 @@
 <?php include "inc/html-top.php"?>
 
-</head>
 		<body>
 			<?php include "inc/nav.php"?>
 
