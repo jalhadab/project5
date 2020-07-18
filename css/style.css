@@ -1,143 +1,120 @@
-.background {
-    /* grid specifications */
-    width: 100%;
-    
-    margin: auto;
-    margin-left: 0;
-
-    position: absolute;
-    /* instruction of z-index from 
-    freecodecamp.org */
-    z-index: 3;
-    /*background from istockphoto.com */
-    background-image: url(../images/jean.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-    color: white;
-    font-family: Arial, "Times New Roman", sans-serif;
-    margin-top: 33%;
-    
-    margin-right: -8px;
-
-    border-top: 1px solid gray;
-    line-height: 1.5;
-}
-@media (max-width: 600px){
-    .background{
-        position: initial;
-        margin-top: 0;
-
-    }
+.z-pattern .primary, .z-pattern .strong, .z-pattern .weak, .z-pattern .terminal {
+    margin: 5vh 5vw;
 }
 
-
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
-
-    margin: 0 auto;
-    width: 85%;
-    max-width: 1000px;
-}
-@media (max-width: 600px){
-    .container{
-        display: block; 
-    }
+.container {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 1000px;
 }
 
+.persistent {
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+header.persistent {
+    top: 0;
+}
+
+footer.persistent {
+	bottom: 0;
+}
+
+header .container, footer .container, .l-fpattern {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+	margin: 0 auto;
+}
+
+form {
+	margin: 1vh 1vw;
+	/* border: 10px solid black; */
+	display: flex;
+	flex-direction: column;
+}
+
+#submit {
+	align-self: flex-end;
+}
+
+
+/* .container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 40px;
+
+	margin: 0 auto;
+	width: 85%;
+	max-width: 1000px;
+} */
 
 .background article {
-    grid-column: 1/4;
+	grid-column: 1/4;
 
-    font-size: 1.3em;
+	font-size: 1.3em;
 
 }
 
 /*useless for project2*/
 .background aside {
-    grid-column: 3/4;
-    color: silver;
-    font-family: 'Montserrat', sans-serif;
-    /* instructions from css-tricks.com */
-    transform: rotate(-3deg);
+	grid-column: 3/4;
+	color: silver;
+	font-family: 'Montserrat', sans-serif;
+	/* instructions from css-tricks.com */
+	transform: rotate(-3deg);
 }
-@media (max-width: 600px){
-    .background aside{
-        transform: none;
-    }
-}
-/**/
-
 
 header {
-    /* background from wallpapercave.com */
-    background-image: url(../images/bubbles.jpg); 
-    background-repeat: no-repeat;
-    background-size: 100%;
-    
-    text-align: center;
-    color: #D9CFC0;
+	/* background from wallpapercave.com */
+	/* background-image: url(../images/bubbles.jpg);  */
+	/* background-repeat: no-repeat;
+	background-size: 100%;
+	
+	text-align: center;
+	color: #D9CFC0;
 
-    padding-bottom: 20%;
-    padding-top: 10%;
+	padding-bottom: 20%;
+	padding-top: 10%;
 
-    position: fixed;
-    width: 100%;
+	position: fixed;
+	width: 100%;
 
-    z-index: 2;
+	z-index: 2; */
 }
-@media (max-width: 600px){
-    header {
-        position: initial;
-        padding-top: 30px;
-
-        padding-bottom : 30px;
-
-    }
-    h1{
-        margin-top: 0;
-    }
-}
-
-
 
 h2 {
-    font-style: italic;
-
-    clear: both;
+	font-style: italic;
+	clear: both;
 }
 
 
 footer {
-    margin-top: 30px;
+	/* margin-top: 30px;
 
-    grid-column: 1 / 4;
-    text-align: center;
+	grid-column: 1 / 4;
+	text-align: center;
 
-    font-style: italic;
-    color: silver;
-    font-size: 15px;
+	font-style: italic;
+	color: silver;
+	font-size: 15px; */
 }
 
 body {
-    margin: 0;
+	margin: 0;
 }
 
 .intro-container{
-    width: 400px;
+	width: 400px;
 }
 .intro-selfie{
-    float: right;
-    position: relative;
+	float: right;
+	position: relative;
 
-    right: 270px;
-    top: -40px;
-}
-
-
-.is-current{
-    background-color: indigo;
-    border: 0px;
+	right: 270px;
+	top: -40px;
 }

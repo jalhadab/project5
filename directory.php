@@ -1,5 +1,4 @@
 <?php include "inc/html-top.php"?>
-
 <body>
     <header>
         <h1>CSC 174</h1>

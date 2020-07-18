@@ -1,5 +1,4 @@
 /* Menu from Qi Miao */
-
 .menu {
     width: 100%;
     height: 80px;
@@ -31,8 +30,6 @@
     }
 }
 
-
-
 .menu li {
     margin-left: 5px;
     margin-right: 5px;
@@ -62,5 +59,5 @@
 
 .menu a:hover {
     background-color: indigo;
-    border: 0px solid;
+    border: 2px solid;
 }
