@@ -12,14 +12,12 @@
 	<div class="background">
 		<div class="container">
 		<article>
-			<h2>Introduction</h2>
+			<!--Introduction h2-->
 				<figure class="intro-selfie">
 					<img src="images/bo-selfie.jpg" alt="Bo's selfie">
 				</figure>
 
-				<div class="intro-container">
-					<p>My name is Bo Wu. I am a rising junior student in University of Rochester majoring in Computer Science. Before UR, I spend two years of my college life at Saint Louis Unversity in Missouri. I am also an international student from Anhui, China. I am passionate about video games and many things associated with games since I was in my primary school.</p>
-				</div>
+				<!--Introduction paragraph-->
 
 			<h2>Early Years</h2>
 				<p>I was born in Huoshan - a county with a reservoir and a winery. I grow up at bottom of the reservoir. Later, I was sent to a boarding school at Hefei - the captical city in the province. I took my middle school and high school there. After finishing second year of the high school, for some reasons, I quit the school. Then I come to the Unites States. I took 1-year language program at UIS, and 2-year college life in SLU. Finally, I transferred to UR in Spring 2020.</p>

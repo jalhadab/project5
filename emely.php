@@ -12,14 +12,12 @@
 	<div class="background">
 		<div class="container">
 		<article>
-			<h2>Introduction</h2>
+			<!--Introduction h2-->
 				<figure class="intro-selfie">
 					<img src="images/emely.jpg" alt="pic of Emely">
 				</figure>
 
-				<div class="intro-container">
-					<p>My name is Emely Rosa-Ortiz. I am a rising senior student in University of Rochester majoring in computer science. I am from New York City. I am passionate about coffee and latte art. </p>
-				</div>
+				<!--Introduction paragraph-->
 
 			<h2>Early Years</h2>
 				<p>  My name is Emely Rosa-Ortiz. I am a rising senior student in University of Rochester majoring in computer science. I am from New York City. I am Dominican and Puerto Rican because my mom is from PR and my dad is from DR. I grew up in Brooklyn, NY. However, I did spend a year of my life in the Dominican Republic where I was home schooled. I went to elementry school, middle school, and high school all in Brooklyn.
