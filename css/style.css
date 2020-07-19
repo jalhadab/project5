@@ -6,6 +6,7 @@
 	margin: 0 auto;
 	width: 95%;
 	max-width: 1000px;
+	position: relative;
 }
 
 .persistent {
@@ -149,6 +150,11 @@ body {
 
 .dir-student div p{
 	line-height: 1.65em;
+}
+
+.a-right{
+	position: absolute;
+	right: 0;
 }
 
 .space-below{

@@ -23,7 +23,7 @@
                             video games and many things associated with games since I was in my primary school.</p>
                     </div>
 
-                    <a href="http://csc174.org/project2/seoul/bo.php" target="_blank">Read more</a>
+                    <a href="bo.php" target="_blank">Read more</a>
                 </section>
 
                 <section class="dir-student space-below">
@@ -36,7 +36,7 @@
                             in computer science. I am from New York City. I am passionate about coffee and latte art.</p>
                     </div>
 
-                    <a href="http://csc174.org/project2/seoul/emely.php" target="_blank">Read more</a>
+                    <a href="emely.php" target="_blank">Read more</a>
                 </section>
 
                 <section class="dir-student">
@@ -51,9 +51,11 @@
                             disadvantages.</p>
                     </div>
 
-                    <a href="http://csc174.org/project2/seoul/kim.php" target="_blank">Read more</a>
+                    <a href="kim.php" target="_blank">Read more</a>
                 </section>
             </article>
+
+            <a href="z-pattern.php" class="a-right">Return Home →</a>
         </div>
     </div>
 
