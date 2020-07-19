@@ -128,23 +128,34 @@ body {
 }
 
 .dir-student h3{
+	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+	padding-top: 5px;
 	padding-bottom: 5px;
+	margin-block-start: 0;
 }
 
 .dir-student a{
 	border: 1px solid black;
 	border-radius: 7px;
 	padding: 20px;
-	align-self: center;
+	align-self: flex-start;
 	text-align: center;
 }
 
-.dir-student div div{
+.dir-student a:hover{
+	background-color: lightgray;
+}
+
+.dir-student div p{
+	line-height: 1.65em;
+}
+
+/*.dir-student div div{
 	margin-left: 0;
 }
 
-/*.dir-student div div:first-of-type{
+.dir-student div div:first-of-type{
 	margin-bottom: 15px;
 }*/
 
@@ -153,7 +164,7 @@ body {
 }
 
 /*
-The following lines are for the example footer in directory.php
+The following lines are for the temp footer in directory.php
 
 EDIT OR DELETE WHEN READY
 */
