@@ -1,52 +1,38 @@
-<?php
-$customCSS = "<link rel='stylesheet' href='css/home.css'>"; include "inc/html-top.php"; ?>
-<body>
-<?php include "inc/nav.php"; ?>
-<header>
-	<h1>City-team: Seoul</h1>
-	<section>
-		<div>Bo Wu</div>
-		<div>Emely Rosa</div>
-		<div>EunLim Kim</div>
-	</section>
-</header>
-<div class="background">
-	<div class="container">
-		<article>
-			<div class="column_1">
-				<figure>
-					<img src="images/bo-selfie.jpg" alt="Bo's photo">
-				</figure>
-				<h2>Bo Wu</h2>
-				<div class="major">Rising Junior</div>
-				<div class="major">Major in Computer Science</div>
-				<a href = "bo.php">Know More...</a>
-			</div>
-			<div class="column_2">
-				<figure>
-					<img src="images/emely.jpg" alt="Emely's photo">
-				</figure>
-				<h2>Emely Rosa</h2>
-				<div class="major">Rising Senior</div>
-				<div class="major">Major in Computer Science</div>
-				<a href = "emely.php">Know More...</a>
-			</div>
-			<div class="column_3">
-				<figure>
-					<img src="images/eunlimkim.jpg" alt="Kim's photo">
-				</figure>
-				<h2>Eun Lim Kim</h2>
-				<div class="major">Rising senior</div>
-				<div class="major">Major in Computer Science</div>
-				<a href = "kim.php">Know More...</a>
-			</div>
-		</article>
-		<footer>
-			<p>CSC 174:Advanced Front-end Web - Project 1</p>
+<?php include "inc/html-top.php";?>
+	<body class="z-pattern">
+		<header class="persistent">
+			<section class="container">
+				<div class="primary">
+					<!-- Primary Optical Area -->
+					<a href="index.php"><h1>City-team: Seoul</h1></a>
+				</div>
+				<form class="strong">
+					<!-- Strong Fallow Area -->
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username" placeholder="username">
+					<label for="passcode">Password:</label>
+					<input type="password" name="passcode" id="passcode" placeholder="password">
+					<input type="submit" value="Submit" id="submit">
+				</form>
+			</section><!-- .container -->
+		</header>
+		<main class="big-message">
+			<!-- Some big center content -->
+			<h2>CENTER CONTENT???</h2>
+		</main>
+		<footer class="persistent">
+			<div class="container">
+				<div class="weak">
+					<!-- Weak Fallow Area -->
+					<p>CSC 174:Advanced Front-end Web:</p>
+					<p>Project 3 Team Seoul</p>
+				</div>
+				<div class="terminal">
+					<!-- Terminal Area -->
+					<a href="directory.php">Go to Directory →</a>
+				</div>
+			</div><!-- .container -->
 		</footer>
-		
-		</div><!-- used for center container -->
-	</div>
-	<?php include "inc/scripts.php" ?>
-</body>
+		<?php include "inc/scripts.php" ?>
+	</body>
 </html>

@@ -55,7 +55,7 @@
                 </section>
             </article>
 
-            <a href="z-pattern.php" class="a-right">Return Home →</a>
+            <a href="index.php" class="a-right">Return Home →</a>
         </div>
     </div>
 
