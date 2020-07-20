@@ -1,5 +1,5 @@
 .z-pattern .primary, .z-pattern .strong, .z-pattern .weak, .z-pattern .terminal {
-    margin: 5vh 5vw;
+	margin: 5vh 5vw;
 }
 
 .container {
@@ -9,6 +9,7 @@
 	position: relative;
 }
 
+/* Keep any .persistent (header and footer) in fixed positon at full page width */
 .persistent {
 	position: fixed;
 	left: 0;
@@ -16,25 +17,25 @@
 }
 
 header.persistent {
-    top: 0;
+	top: 0;
 }
 
 footer.persistent {
 	bottom: 0;
 }
 
-header .container, footer .container, .l-fpattern {
-    display: flex;
-    justify-content: space-between;
+/* Use flex to push header and footer content to  edge of parent element */
+header .container, footer .container {
+	display: flex;
+	justify-content: space-between;
 }
 
+/* Center the big message/hero content */
 .big-message {
 	display: flex;
-	/* width: 100vw; */
 	min-height: 100vh;
-	text-align: center;
-    color: white;
-    text-shadow: 0 0 30px black;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
