@@ -8,5 +8,5 @@
 		<link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="css/style.css">
 		<?php echo $customCSS; ?>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 	</head>
