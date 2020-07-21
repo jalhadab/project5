@@ -1,14 +1,34 @@
-/* home page */
+/**************************************
+            Base Styles
+**************************************/
 
 header {
-	padding-top: 8%;
-}
-@media (max-width: 600px){
-    header {
-        padding-top: 30px;
-    }
+    padding-top: 8%;
 }
 
+footer {
+    grid-column: 1/4;
+    text-align: center;
+    font-style: italic;
+    color: silver;
+    font-size: 15px;
+
+}
+
+img {
+    height: 300px;
+    border: 7px solid #214B71;
+    box-shadow: 3px 3px #1a3e5f;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/**************************************
+            Layout Styles
+**************************************/
 
 .background article {
     /* grid specifications w/in article */
@@ -18,61 +38,21 @@ header {
 
     background: none;
     align-content: center;
- }
-@media (max-width: 600px){
-    .background article {
-        display: block;
-    }
 }
 
+/**************************************
+            Module Styles
+**************************************/
 
-.column_1 {
-	text-align: center;
-
-	grid-column: 1/2;
-	background-image: url(../images/jean.jpg);
-}
-@media (max-width: 600px){
-    .column_1{
-        margin-bottom: 50px;
-    }
-}
-
-.column_2 {
-	text-align: center;
-
-	grid-column: 2/3;
-    background-image: url(../images/jean.jpg);
-}
-@media (max-width: 600px){
-    .column_2{
-        margin-bottom: 50px;
-    }
-}
-
-.column_3 {
-	text-align: center;
-
-	grid-column: 3/4;
-    background-image: url(../images/jean.jpg);
-}
-
-footer {
-	grid-column: 1/4;
-	text-align: center;
-
-	font-style: italic;
-	color: silver;
-    font-size: 15px;
-
-}
-
+/*
+Which color? Delete incorrect one.
+ */
 .background a {
-	text-decoration: none;
-	color: silver;
-	border: 1.5px dotted white;
-	padding: 4px;
-    color: #D9CFC0;
+    text-decoration: none;
+    /*color: silver;*/
+    border: 1.5px dotted white;
+    padding: 4px;
+    /*color: #D9CFC0;*/
     background-color: #214B71;
 }
 
@@ -80,21 +60,50 @@ footer {
     background-color: indigo;
 }
 
-img {
-	height: 300px;
-	border: 7px solid #214B71;
-	box-shadow: 3px 3px #1a3e5f;
+.column_1 {
+    text-align: center;
+    grid-column: 1/2;
+    background-image: url(../images/jean.jpg);
 }
 
-h2 {
-	font-size: 20px;
-	text-align: center;
+.column_2 {
+    text-align: center;
+    grid-column: 2/3;
+    background-image: url(../images/jean.jpg);
+}
+
+.column_3 {
+    text-align: center;
+    grid-column: 3/4;
+    background-image: url(../images/jean.jpg);
 }
 
 .major {
-	list-style-type: square;
-	line-height: 1.5;
-	padding-bottom: 8px;
+    list-style-type: square;
+    line-height: 1.5;
+    padding-bottom: 8px;
 
+}
+
+/**************************************
+            State Styles
+**************************************/
+
+@media (max-width: 600px){
+    header {
+        padding-top: 30px;
+    }
+
+    .background article {
+        display: block;
+    }
+
+    .column_1{
+        margin-bottom: 50px;
+    }
+
+    .column_2{
+        margin-bottom: 50px;
+    }
 }
 
