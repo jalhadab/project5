@@ -24,10 +24,6 @@ p, div {
 	line-height: 1.75em;
 }
 
-a{
-	line-height: initial;
-}
-
 body {
 	margin: 0;
 }
@@ -121,6 +117,7 @@ footer.persistent {
 	padding: 20px;
 	align-self: flex-start;
 	text-align: center;
+	line-height: initial;
 }
 
 .dir-student a:hover{
