@@ -63,7 +63,7 @@
 		</article>
 
 		<footer>
-			<p>CSC 174: Advanced Front-end Web - Project 2</p>
+			<div>CSC 174: Advanced Front-end Web - Project 3</div>
 		</footer>
 
 		</div> <!-- center container -->

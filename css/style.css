@@ -126,6 +126,11 @@ footer.persistent {
 	line-height: 1.65em;
 }
 
+.dir-footer{
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+
 .z-pattern .primary, .z-pattern .strong, .z-pattern .weak, .z-pattern .terminal {
 	margin: 5vh 5vw;
 }
@@ -154,20 +159,4 @@ footer.persistent {
 
 #submit {
 	align-self: flex-end;
-}
-
-/*
-The following lines are for the temp footer in directory.php
-
-EDIT OR DELETE WHEN READY
-*/
-
-.dir-footer{
-	text-align: center;
-	margin-top: 20px;
-	padding-bottom: 10px;
-}
-
-.dir-footer div{
-	font-size: x-large;
 }

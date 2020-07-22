@@ -43,11 +43,11 @@
 						<a href="kim.php">Read more</a>
 					</section>
 				</article>
+				<footer class="dir-footer">
+                	<div>CSC 174: Advanced Front-end Web - Project 3</div>
+                </footer>
 			</div>
 		</div>
-		<footer class="dir-footer">
-			<div>Project 3 - Seoul (TEMP)</div>
-		</footer>
 		<?php include "inc/scripts.php"?>
 	</body>
 </html>
