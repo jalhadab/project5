@@ -1,6 +1,7 @@
 <?php include "inc/html-top.php"?>
 
 		<body>
+		    <?php $customLink="<a href='directory.php'>Return to Directory</a>";?>
 			<?php include "inc/nav.php"?>
 
 			<header>

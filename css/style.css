@@ -53,7 +53,6 @@ header .container, footer .container {
 	margin: 0 auto;
 	width: 95%;
 	max-width: 1000px;
-	position: relative;
 }
 
 .dir-student{
@@ -138,10 +137,6 @@ footer.persistent {
 	width: 100%;
 }
 
-#submit {
-	align-self: flex-end;
-}
-
 .intro-container{
 	width: 400px;
 }
@@ -153,13 +148,12 @@ footer.persistent {
 	top: -40px;
 }
 
-.a-right{
-	position: absolute;
-	right: 0;
-}
-
 .space-below{
 	margin-bottom: 100px;
+}
+
+#submit {
+	align-self: flex-end;
 }
 
 /*

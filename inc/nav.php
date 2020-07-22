@@ -1,3 +1,3 @@
 <nav class="menu">
-	<a href="directory.php">Return to Directory</a>
+	<?php echo $customLink;?>
 </nav>

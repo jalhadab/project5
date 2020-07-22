@@ -1,12 +1,16 @@
 <?php include "inc/html-top.php"?>
 	<body>
-		<header>
+	    <?php $customLink="<a href='index.php'>Return Home</a>";?>
+	    <?php include "inc/nav.php"?>
+
+		<header class="space-below">
 			<h1>CSC 174</h1>
+			<div>Members of Team Seoul</div>
 		</header>
 		<div class="background">
 			<div class="container">
 				<article>
-					<h2>Our Team</h2>
+
 					<section class="dir-student space-below">
 						<img src="images/bo-selfie.jpg" alt="Bo">
 						<div>
@@ -39,7 +43,6 @@
 						<a href="kim.php">Read more</a>
 					</section>
 				</article>
-				<a href="index.php" class="a-right">← Return Home</a>
 			</div>
 		</div>
 		<footer class="dir-footer">
