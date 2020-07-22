@@ -44,7 +44,6 @@ form {
 	flex-direction: column;
 }
 
-/* Use flex to push header and footer content to  edge of parent element */
 header .container, footer .container {
 	display: flex;
 	justify-content: space-between;
@@ -60,7 +59,6 @@ header .container, footer .container {
 	display: flex;
 }
 
-/* Center the big message/hero content */
 .big-message {
 	display: flex;
 	min-height: 100vh;
@@ -133,7 +131,6 @@ footer.persistent {
 	margin: 5vh 5vw;
 }
 
-/* Keep any .persistent (header and footer) in fixed positon at full page width */
 .persistent {
 	position: fixed;
 	left: 0;
