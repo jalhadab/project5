@@ -3,34 +3,37 @@
 **************************************/
 
 h1 {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 h2 {
-	font-style: italic;
-	clear: both;
+  font-style: italic;
+  clear: both;
 }
 
 h3 {
-	font-size: 1.25em;
+  font-size: 1.25em;
 }
 
-h1, h2, h3{
-	font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
-p, div {
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.75em;
+p,
+div {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.75em;
 }
 
 body {
-	margin: 0;
+  margin: 5px 10%;
 }
 
 img {
-	border-radius: 5px;
-	height: 100%;
+  border-radius: 5px;
+  height: 100%;
 }
 
 /**************************************
@@ -38,32 +41,33 @@ img {
 **************************************/
 
 form {
-	margin: 1vh 1vw;
-	/* border: 10px solid black; */
-	display: flex;
-	flex-direction: column;
+  margin: 1vh 1vw;
+  /* border: 10px solid black; */
+  display: flex;
+  flex-direction: column;
 }
 
-header .container, footer .container {
-	display: flex;
-	justify-content: space-between;
+header .container,
+footer .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {
-	margin: 0 auto;
-	width: 95%;
-	max-width: 1000px;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1000px;
 }
 
-.dir-student{
-	display: flex;
+.dir-student {
+  display: flex;
 }
 
 .big-message {
-	display: flex;
-	min-height: 100vh;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 /* .container{
@@ -81,77 +85,76 @@ header .container, footer .container {
 **************************************/
 
 header.persistent {
-	top: 0;
+  top: 0;
 }
 
 footer.persistent {
-	bottom: 0;
+  bottom: 0;
 }
 
 /*useless for project2*/
 .background aside {
-	grid-column: 3/4;
-	color: silver;
-	font-family: 'Montserrat', sans-serif;
-	/* instructions from css-tricks.com */
-	transform: rotate(-3deg);
+  grid-column: 3/4;
+  color: silver;
+  font-family: "Montserrat", sans-serif;
+  /* instructions from css-tricks.com */
+  transform: rotate(-3deg);
 }
 
-.dir-student div{
-	margin: 0 50px;
+.dir-student div {
+  margin: 0 50px;
 }
 
-.dir-student h3{
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin: 0;
+.dir-student h3 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
 }
 
-.dir-student a{
-	border: 1px solid black;
-	border-radius: 7px;
-	padding: 20px;
-	align-self: flex-start;
-	text-align: center;
-	line-height: initial;
+.dir-student a {
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 20px;
+  align-self: flex-start;
+  text-align: center;
+  line-height: initial;
 }
 
-.dir-student a:hover{
-	background-color: lightgray;
+.dir-student a:hover {
+  background-color: lightgray;
 }
 
-.dir-footer{
-	margin-top: 20px;
-	padding-bottom: 10px;
+.dir-footer {
+  margin-top: 20px;
+  padding-bottom: 10px;
 }
 
-.z-pattern .primary, .z-pattern .strong, .z-pattern .weak, .z-pattern .terminal {
-	margin: 5vh 5vw;
+.z-pattern .primary,
+.z-pattern .strong,
+.z-pattern .weak,
+.z-pattern .terminal {
+  margin: 5vh 5vw;
 }
 
 .persistent {
-	position: fixed;
-	left: 0;
-	width: 100%;
+  position: fixed;
+  left: 0;
+  width: 100%;
 }
 
-.intro-container{
-	width: 400px;
+.intro-container {
+  width: 400px;
 }
-.intro-selfie{
-	float: right;
-	position: relative;
-
-	right: 270px;
-	top: -40px;
+.intro-selfie {
+  float: left;
 }
 
-.space-below{
-	margin-bottom: 100px;
+.space-below {
+  margin-bottom: 100px;
 }
 
 #submit {
-	align-self: flex-end;
+  align-self: flex-end;
 }
