@@ -1,3 +1,4 @@
+<?php $customTitle="Home";?>
 <?php include "inc/html-top.php";?>
 	<body class="z-pattern">
 		<header class="persistent">

@@ -1,3 +1,4 @@
+<?php $customTitle="Bo Wu";?>
 <?php include "inc/html-top.php"?>
 
 <body>

@@ -1,3 +1,4 @@
+<?php $customTitle="Directory";?>
 <?php include "inc/html-top.php"?>
 	<body>
 	    <?php $customLink="<a href='index.php'>Return Home</a>";?>
