@@ -24,6 +24,10 @@ body {
 	margin: 0;
 }
 
+img {
+	height: 100%;
+}
+
 /**************************************
 			Layout Styles
 **************************************/
@@ -117,10 +121,6 @@ footer.persistent {
 
 .dir-student div p{
 	line-height: 1.65em;
-}
-
-img {
-	height: 100%;
 }
 
 .z-pattern .primary, .z-pattern .strong, .z-pattern .weak, .z-pattern .terminal {
