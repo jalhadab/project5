@@ -25,17 +25,17 @@
 }
 
 .menu li {
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: .5vw;
+	margin-right: .5vw;
 	list-style: none;
 }
 
 .menu a {
-	border: 2px dotted #ffffff;
+	border: 2px dotted khaki;
 	text-decoration: none;
 	display: block;
-	color: #D9CFC0;
-	/* background-color: #214B71; */
+	color: khaki;
+	background-color: black;
 	font-size: 20px;
 	text-align: center;
 	padding: 5px 15px;
@@ -52,29 +52,30 @@ header.container {
 	border-bottom: 1px solid khaki;
 }
 
-header div {
-	/* text-align: center; */
-    /* margin: 0 auto; */
-    padding: 0 1vw;
+header a {
+	padding: 1vh 1vw;
+	background-color: black;
+	color: khaki;
+	text-decoration: none;
 }
 
-header div p {
+header a p {
 	margin: 0 auto;
 }
 
-ul li ul {
+.submenu {
 	visibility: hidden;
 	opacity: 0;
 	position: absolute;
 	right: 0;
 	display: none;
+	z-index: 1;
+	padding: 0;
+	/* margin: 0 auto; */
 }
 
-ul li:hover > ul,
-ul li ul:hover {
-	visibility: visible;
-	opacity: 1;
-	display: block;
+.submenu li {
+	/* margin: 0; */
 }
 
 /**************************************
@@ -82,18 +83,12 @@ ul li ul:hover {
 **************************************/
 
 .menu li a.is-current {
-	color: #214B71;
-	background-color: #D9CFC0;
+	color: black;
+	background-color: khaki;
 }
 
-@media (max-width: 600px){
-	.menu {
-		position: initial;
-		height: initial;
-	}
-
-	.menu ul {
-		display: block;
-		margin: 0;
-	}
+.menubtn:hover > .submenu, .submenu:hover {
+	visibility: visible;
+	opacity: 1;
+	display: block;
 }

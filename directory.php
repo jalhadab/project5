@@ -2,10 +2,10 @@
 <?php include "inc/html-top.php"?>
 	<body>
 		<header class="container">
-			<div>
+			<a href="index.php">
 				<h1>CSC 174</h1>
 				<p>Members of Team Seoul</p>
-			</div>
+			</a>
 			<?php include "inc/nav.php"?>
 		</header>
 		<div class="background">

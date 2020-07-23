@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-	font-style: italic;
+	/* font-style: italic; */
 	/* clear: both; */
 	/* margin: 0 auto; */
 }
@@ -26,12 +26,14 @@ h2,
 h3 {
  	font-family: "Montserrat", sans-serif;
 	margin-bottom: 0;
+	border-bottom: 1px solid khaki;
 }
 
 p,
 div {
 	font-family: "Roboto", sans-serif;
 	line-height: 1.75em;
+	border-radius: 5px;
 }
 
 img {
@@ -99,7 +101,10 @@ ol {
 
 header h2 {
 	font-style: normal;
-	margin: auto;
+	margin: 1vh auto;
+	background-color: black;
+	padding: 1vh 1vw;
+	border: 1px solid;
 }
 
 .first-heading {
@@ -182,7 +187,7 @@ footer.persistent {
 
 .intro-selfie {
 	float: right;
-	margin: auto 0;
+	margin-right: 0;
 
 }
 
