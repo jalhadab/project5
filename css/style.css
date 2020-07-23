@@ -43,6 +43,10 @@ img {
 	display: block;
 }
 
+footer {
+	background-color: black;
+}
+
 /**************************************
 		Layout Styles
 **************************************/
@@ -125,6 +129,7 @@ header.persistent {
 
 footer.persistent {
 	bottom: 0;
+	background-color: navy;
 }
 
 .dir-student div {
@@ -157,7 +162,8 @@ footer.persistent {
 }
 
 .dir-student a:hover {
-	background-color: lightgray;
+	background-color: khaki;
+	color: black;
 }
 
 .dir-footer {
