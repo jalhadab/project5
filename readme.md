@@ -1,12 +1,25 @@
 # Team Seoul
 
-## Team Members
+## Team Members (Project 3)
+- Evan Pollack
+- Michael Bashner
+- Dan Zhang
+
+## Stylistic Changes
+- Style heavily changed from previous project!
+- Changed text color, font, and line height to increase readability
+- Changed denim background to solid blue, so the website has more of a "techy" (navy, black) aesthetic
+- Removed hero bubble banner at top of page
+- Directory layout follows Michael's F-Pattern
+- Index layout follows basic Z-Pattern
+
+## Team Members (Project 2)
 - Bo Wu
 - Emely Rosa
 - Eun Lim Kim
 
 
-## Classes and relationships
+## Classes and Relationships
 - A college student has 
 	- name 
 	- major 
@@ -20,7 +33,7 @@
 	- hobby
 		- what you like to do in your spare time? 
 
-## choreography
+## Choreography
 Overall, our pages are organized by alphabet order and general-to-specific order (a kind of hierarchy).
 
 We have 4 four pages including home page, Bo's page, Emely's page and Kim's Page. Following the general to specific order, we decide to put home page on the left most in the navigation bar. Then Bo, Emely, Kim are arranged in alphabetic order.  
