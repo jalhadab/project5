@@ -5,7 +5,10 @@
 			<section class="container">
 				<div class="primary">
 					<!-- Primary Optical Area -->
-					<a href="index.php"><h1>City-team: Seoul</h1></a>
+					<a href="index.php">
+						<h1>CSC 174:</h1>
+						<div>Summer 2020</div>
+					</a>
 				</div>
 				<form class="strong">
 					<!-- Strong Fallow Area -->
@@ -19,7 +22,8 @@
 		</header>
 		<main class="big-message">
 			<!-- Some big center content -->
-			<h2>CENTER CONTENT???</h2>
+			<h2>Team Seoul</h2>
+			<h3>Computer Scientists</h3>
 		</main>
 		<footer class="persistent">
 			<div class="container">
