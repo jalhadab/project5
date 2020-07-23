@@ -1,12 +1,12 @@
 <?php $customTitle="Directory";?>
 <?php include "inc/html-top.php"?>
 	<body>
-	    <?php $customLink="<a href='index.php'>Return Home</a>";?>
-	    <?php include "inc/nav.php"?>
-
-		<header class="space-below">
-			<h1>CSC 174</h1>
-			<div>Members of Team Seoul</div>
+		<header class="container">
+			<div>
+				<h1>CSC 174</h1>
+				<span>Members of Team Seoul</span>
+			</div>
+			<?php include "inc/nav.php"?>
 		</header>
 		<div class="background">
 			<div class="container">

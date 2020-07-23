@@ -1,6 +1,11 @@
 /**************************************
 			Base Styles
 **************************************/
+body {
+  margin: 0 auto;
+  color: khaki;
+  background-color: navy;
+}
 
 h1 {
   margin: 0 auto;
@@ -23,17 +28,13 @@ h3 {
 
 p,
 div {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.75em;
-}
-
-body {
-  margin: 0 auto;
+	font-family: "Roboto", sans-serif;
+	line-height: 1.75em;
 }
 
 img {
-  border-radius: 5px;
-  height: 100%;
+	border-radius: 5px;
+	height: 100%;
 }
 
 /**************************************
@@ -41,33 +42,35 @@ img {
 **************************************/
 
 form {
-  margin: 1vh 1vw;
+	margin: 1vh 1vw;
   /* border: 10px solid black; */
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 header .container,
 footer .container {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .container {
-  margin: 0 auto;
-  width: 95%;
-  max-width: 1000px;
+	margin: 0 auto;
+	width: 95%;
+	max-width: 1000px;
 }
 
 .dir-student {
-  display: flex;
+	display: flex;
+	background-color: black;
+	justify-content: space-between;
 }
 
 .big-message {
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
 }
 
 /* .container{
@@ -80,9 +83,19 @@ footer .container {
 	max-width: 1000px;
 } */
 
+header {
+	display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
 /**************************************
 			Module Styles
 **************************************/
+
+.container {
+	background-color: blue;
+}
 
 header.persistent {
   top: 0;
@@ -92,34 +105,33 @@ footer.persistent {
   bottom: 0;
 }
 
-/*useless for project2*/
-.background aside {
-  grid-column: 3/4;
-  color: silver;
-  font-family: "Montserrat", sans-serif;
-  /* instructions from css-tricks.com */
-  transform: rotate(-3deg);
-}
-
 .dir-student div {
-  margin: 0 50px;
+  /* margin: 0 50px; */
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  /* color: black; */
+  justify-self: center;
+  max-width: 60%;
 }
 
 .dir-student h3 {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid khaki;
+  border-bottom: 1px solid khaki;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .dir-student a {
-  border: 1px solid black;
+  border: 1px solid currentcolor;
   border-radius: 7px;
   padding: 20px;
   align-self: flex-start;
   text-align: center;
   line-height: initial;
+  text-decoration: none;
+  color: currentcolor;
+  justify-self: flex-end;
 }
 
 .dir-student a:hover {
@@ -129,6 +141,9 @@ footer.persistent {
 .dir-footer {
   margin-top: 20px;
   padding-bottom: 10px;
+  background-color: black;
+  padding: 1vw 1vh;
+  justify-content: space-between;
 }
 
 .z-pattern .primary,
@@ -147,6 +162,7 @@ footer.persistent {
 .intro-container {
   width: 400px;
 }
+
 .intro-selfie {
   /* float: left; */
   margin: auto 0;
@@ -154,7 +170,7 @@ footer.persistent {
 }
 
 .space-below {
-  margin-bottom: 100px;
+  margin-bottom: 5vh;
 }
 
 #submit {
