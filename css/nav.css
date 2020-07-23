@@ -48,6 +48,20 @@
 	border: 2px solid;
 }
 
+header.container {
+	border-bottom: 1px solid khaki;
+}
+
+header div {
+	/* text-align: center; */
+    /* margin: 0 auto; */
+    padding: 0 1vw;
+}
+
+header div p {
+	margin: 0 auto;
+}
+
 ul li ul {
 	visibility: hidden;
 	opacity: 0;

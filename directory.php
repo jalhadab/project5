@@ -4,14 +4,16 @@
 		<header class="container">
 			<div>
 				<h1>CSC 174</h1>
-				<span>Members of Team Seoul</span>
+				<p>Members of Team Seoul</p>
 			</div>
 			<?php include "inc/nav.php"?>
 		</header>
 		<div class="background">
 			<div class="container">
 				<article>
-
+					<header>
+						<h2>Directory</h2>
+					</header>
 					<section class="dir-student space-below">
 						<img src="images/bo-selfie.jpg" alt="Bo">
 						<div>
@@ -45,8 +47,8 @@
 					</section>
 				</article>
 				<footer class="dir-footer">
-                	<div>CSC 174: Advanced Front-end Web - Project 3</div>
-                </footer>
+					<div>CSC 174: Advanced Front-end Web - Project 3</div>
+				</footer>
 			</div>
 		</div>
 		<?php include "inc/scripts.php"?>
