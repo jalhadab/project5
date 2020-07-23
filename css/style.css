@@ -223,10 +223,18 @@ footer.persistent a:hover {
 	margin-bottom: 2vh;
 }
 
+.space-img{
+	margin-top: 45px;
+}
+
 .first-heading {
     margin-top: 0;
 }
 
 #submit {
 	align-self: flex-end;
+}
+
+#space-img-kim{
+	margin-top: 25px;
 }
