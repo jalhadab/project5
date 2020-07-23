@@ -82,6 +82,7 @@ footer .container {
 .dir-student {
 	display: flex;
 	background-color: black;
+	border-radius: 5px;
 	justify-content: space-between;
 	padding: 1vw 1vh;
 }
