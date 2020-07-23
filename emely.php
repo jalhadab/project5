@@ -18,7 +18,7 @@
 					<!--Introduction paragraph-->
 					<h2 class="first-heading">Early Years</h2>
 					<p>My name is Emely Rosa-Ortiz. I am a rising senior student in University of Rochester majoring in computer science. I am from New York City. I am Dominican and Puerto Rican because my mom is from PR and my dad is from DR. I grew up in Brooklyn, NY. However, I did spend a year of my life in the Dominican Republic where I was home schooled. I went to elementry school, middle school, and high school all in Brooklyn. I graduated from Uncommon Charter High School in 2017 with High Honors. Now I am going into hopefully my last year at the UR.</p>
-					<h3>Education background</h3>
+					<h2>Education background</h2>
 					<ol>
 						<li>2002-2008:
 							<ul>

@@ -18,7 +18,7 @@
 						<!--Introduction paragraph-->
 						<h2>Early Years</h2>
 						<p> I was born in Daegu, South Korea and moved to Ulsan. After living in Ulsan for 7 years, my parents decided to move to Busan for better education. I went elementary school and middle school in Busan then I told my parents that I want to study in the United States. In 2012, I left South Korea and started to study in Rhode Island. I met most of my good friends during that time.</p>
-						<h3>Education background</h3>
+						<h2>Education background</h2>
 						<ol>
 							<li>2004-2010:
 								<ul>
