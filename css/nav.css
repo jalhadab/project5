@@ -1,4 +1,17 @@
 /**************************************
+			Base Styles
+**************************************/
+
+header a {
+	color: khaki;
+	text-decoration: none;
+}
+
+header a p {
+	margin: 0 auto;
+}
+
+/**************************************
 			Layout Styles
 **************************************/
 
@@ -50,15 +63,6 @@
 
 header.container {
 	border-bottom: 1px solid khaki;
-}
-
-header a {
-	color: khaki;
-	text-decoration: none;
-}
-
-header a p {
-	margin: 0 auto;
 }
 
 .submenu {
