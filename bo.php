@@ -13,7 +13,7 @@
 				<article>
 					<!--Introduction h2-->
 					<figure class="intro-selfie">
-						<img src="images/bo-selfie.jpg" alt="Bo's selfie">
+						<img src="images/bo-selfie.jpg" alt="Bo's selfie" class="space-img">
 					</figure>
 					<!--Introduction paragraph-->
 					<h2 class="first-heading">Early Years</h2>

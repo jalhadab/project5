@@ -13,7 +13,7 @@
 					<article>
 						<!--Introduction h2-->
 						<figure class="intro-selfie">
-							<img src="images/eunlimkim.jpg" alt="kim's selfie">
+							<img src="images/eunlimkim.jpg" alt="kim's selfie" id="space-img-kim">
 						</figure>
 						<!--Introduction paragraph-->
 						<h2>Early Years</h2>
