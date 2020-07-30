@@ -7,10 +7,12 @@ include('connect-db.php');
 // check if the form has been submitted. If it has, start to process the form and save it to the database
 if (isset($_POST['submit'])) {
 	// get form data, making sure it is valid
-	$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['firstname']));
-	$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['lastname']));
-	$phone = mysqli_real_escape_string($connection, htmlspecialchars($_POST['phone']));
-	$email = mysqli_real_escape_string($connection, htmlspecialchars($_POST['email']));
+	$id = mysqli_real_escape_string($connection, htmlspecialchars($_POST['id']));
+	$picture = mysqli_real_escape_string($connection, htmlspecialchars($_POST['picture']));
+    $name = mysqli_real_escape_string($connection, htmlspecialchars($_POST['name']));
+	$bio = mysqli_real_escape_string($connection, htmlspecialchars($_POST['bio']));
+	$link = mysqli_real_escape_string($connection, htmlspecialchars($_POST['link']));
+
 
 	// check to make sure both fields are entered
 	if ($firstname == '' || $lastname == '' || $phone == '' || $email == '') {
@@ -22,7 +24,7 @@ if (isset($_POST['submit'])) {
 
 	} else {
 		// save the data to the database
-		$result = mysqli_query($connection, "INSERT INTO phonelist (firstname, lastname, phone, email) VALUES ('$firstname', '$lastname', '$phone', '$email')");
+		$result = mysqli_query($connection, "INSERT INTO yluo_phonelist (id, picture, name, bio, link) VALUES ('$id', '$picture','$name','$bio','$link')");
 
 		// once saved, redirect back to the view page
 		header("Location: index.php");
