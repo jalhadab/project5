@@ -11,17 +11,14 @@
 					</a>
 				</div>
 				
-				<div class="button">
-				<a href="new.php">Student access form</a>
-				</div>
-				
 				<form class="strong">
 					<!-- Strong Fallow Area -->
+					<div>Student login:</div>
 					<label for="username">Username:</label>
 					<input type="text" name="username" id="username" placeholder="username">
 					<label for="passcode">Password:</label>
 					<input type="password" name="passcode" id="passcode" placeholder="password">
-					<input type="submit" value="Submit" id="submit">
+					<button type="button"><a href="new.php">Submit</a></button>
 				</form>
 			</section><!-- .container -->
 		</header>
