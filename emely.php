@@ -58,7 +58,7 @@
 					<p> I don't get to do my "hobbies" that often. However, I am into latte art. I started liking latte art last summer when I worked at Ralph's Coffee Shop. At first it's pretty tricky, but you get the hang of it. I am not that great. I am also into playing Animal Crossing.</p>
 				</article>
 				<footer>
-					<div>CSC 174: Advanced Front-end Web - Project 3</div>
+					<div>CSC 174: Advanced Front-end Web - Project 4</div>
 				</footer>
 			</div> <!-- center container -->
 		</div><!--  background container -->

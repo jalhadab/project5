@@ -59,7 +59,7 @@
 							<p>In United States, I usually watch movie with my friends and cook. I love Science Fiction, action, and comic. I try to cook various kind including simple italian food, korean traditional dishes and typical brunch menu. In Korea, I mostly spend time with my dog, Abong (corgi). I usually walk him for at least one hour but he never gets enough of it. I also love trying new restaurants and adding good ones to my favorite restaurant list.</p>
 				</article>
 				<footer>
-					<div>CSC 174: Advanced Front-end Web - Project 3</div>
+					<div>CSC 174: Advanced Front-end Web - Project 4</div>
 				</footer>
 			</div> <!-- center container -->
 		</div><!--  background container -->

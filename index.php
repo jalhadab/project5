@@ -10,6 +10,7 @@
 						<div>Summer 2020</div>
 					</a>
 				</div>
+				<a href="new.php">Student access form</a>
 				<form class="strong">
 					<!-- Strong Fallow Area -->
 					<label for="username">Username:</label>
@@ -22,15 +23,15 @@
 		</header>
 		<main class="big-message">
 			<!-- Some big center content -->
-			<h2>Team Seoul</h2>
-			<h3>Computer Scientists</h3>
+			<h2>.</h2>
+			<h3>.</h3>
 		</main>
 		<footer class="persistent">
 			<div class="container">
 				<div class="weak">
 					<!-- Weak Fallow Area -->
 					<p>CSC 174:Advanced Front-end Web:</p>
-					<p>Project 3 Team Seoul</p>
+					<p>Project 4 Team Seoul</p>
 				</div>
 				<div class="terminal">
 					<!-- Terminal Area -->

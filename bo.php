@@ -64,7 +64,7 @@
 					<p>In my spare time, gaming is the main entertainment activity. I love these dedicate video games. I had been addicted to it for a long period since the first time I played it during primary school. As I grow up, I start to become more self-discipline and play more and more games. It does help me have my own judgement about what kind of games is fun and good for me. Because of this hobby, I take computer science major in hope of becoming a video game developer in the future. Besides video games, I also pay attention to electronic product including phones, video cards and game consoles. I think the most notable product in 2020 is Playstation 5 and Xbox Series X, which mark the beginning of 4K age.</p>
 				</article>
 				<footer>
-					<div>CSC 174: Advanced Front-end Web - Project 3</div>
+					<div>CSC 174: Advanced Front-end Web - Project 4</div>
 				</footer>
 			</div> <!-- center container -->
 		</div><!--  background container -->
