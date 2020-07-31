@@ -25,12 +25,32 @@ if ($error != '') {
 
 <form action="" method="post">
 	<input type="hidden" name="id" value="<?php echo $id; ?>">
-	<strong>ID: *</strong> <input type="text" name="firstname" value="<?php echo $id; ?>"/><br><br>
-	<strong>Picture Upload: *</strong>
-	<input type="file" name="fileToUpload" id="fileToUpload" value="<?php echo $picture; ?>" /><br><br>
-	<strong>Name: *</strong> <input type="text" name="lastname" value="<?php echo $name; ?>"/><br>
-	<strong>Bio: *</strong> <input type="text" name="phone" value="<?php echo $bio; ?>"/><br>
-	<strong>Link: *</strong> <input type="text" name="email" value="<?php echo $link; ?>"/><br>
+	<div class="field">
+		<div class="control">
+			<strong>ID: *</strong> <input type="text" name="firstname" value="<?php echo $id; ?>"/><br><br>
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<strong>Picture Upload: *</strong>
+			<input type="file" name="fileToUpload" id="fileToUpload" value="<?php echo $picture; ?>" /><br><br>
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<strong>Name: *</strong> <input type="text" name="lastname" value="<?php echo $name; ?>"/><br>
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<strong>Bio: *</strong> <input type="text" class="textarea is-large" name="phone" value="<?php echo $bio; ?>"/><br>
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<strong>Link: *</strong> <input type="text" name="email" value="<?php echo $link; ?>"/><br>
+		</div>
+	</div>
 	<div>* required</div>
 	<div class="field is-grouped">
 		<div class="control">

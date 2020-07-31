@@ -18,10 +18,8 @@
 			<section class="container">
 				<div class="primary">
 					<!-- Primary Optical Area -->
-					<a href="index.php">
 						<h1>CSC 174:</h1>
 						<div>Summer 2020</div>
-					</a>
 				</div>
 				
 				<form class="strong">
@@ -55,7 +53,7 @@
 			<div class="container">
 				<div class="weak">
 					<!-- Weak Fallow Area -->
-					<p>CSC 174:Advanced Front End Web Development:</p>
+					<p>CSC 174: Advanced Front End Web Development:</p>
 					<p>Project 4 Team Seoul</p>
 				</div>
 				<div class="terminal">

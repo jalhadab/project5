@@ -15,12 +15,14 @@ html{
 
 .button.is-link {
 	background-color: steelblue;
+	color: black;
 	-webkit-box-shadow: 1px 1px 1px 1px black;
 	box-shadow: 1px 1px 1px 1px black;
 }
 
 .button.is-link.is-light {
 	background-color: ivory;
+	color: black;
 	-webkit-box-shadow: 1px 1px 1px 1px black;
 	box-shadow: 1px 1px 1px 1px black;
 }
