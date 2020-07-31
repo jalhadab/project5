@@ -34,10 +34,10 @@
 					
 					<div class="field is-grouped">
 						<div class="control">
-							<button type="button" class="button is-link"><a href="directory.php">Go!</a></button>
+							<a href="directory.php" class="button is-link">Go!</a>
 						</div>
 						<div class="control">
-							<button type="button" class="button is-link is-light"><a href="new.php">Add a new user</a></button>
+							<a href="new.php" class="button is-link is-light">Add a new user</a>
 						</div>
 					</div>
 				</form>
