@@ -1,5 +1,18 @@
 <?php $customTitle="Home";?>
-<?php include "inc/html-top.php";?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Project 3 Seoul Team">
+		<title><?php echo $customTitle;?> | Seoul Project 4</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+		<link rel="stylesheet" type="text/css" href="css/override.css">
+	</head>
+
 	<body class="z-pattern">
 		<header class="persistent">
 			<section class="container">
@@ -14,12 +27,23 @@
 				<form class="strong">
 					<!-- Strong Fallow Area -->
 					<div>Student login:</div>
+					
+
 					<label for="username">Username:</label>
-					<input type="text" name="username" id="username" placeholder="username">
+					<input type="text" name="username" id="username" placeholder="Username">
 					<label for="passcode">Password:</label>
-					<input type="password" name="passcode" id="passcode" placeholder="password">
-					<button type="button"><a href="new.php">Submit</a></button>
+					<input type="password" name="passcode" id="passcode" placeholder="Password">
+					
+					<div class="field is-grouped">
+						<div class="control">
+							<button type="button" class="button is-link"><a href="directory.php">Go!</a></button>
+						</div>
+						<div class="control">
+							<button type="button" class="button is-link is-light"><a href="new.php">Add a new user</a></button>
+						</div>
+					</div>
 				</form>
+				
 			</section><!-- .container -->
 		</header>
 		<main class="big-message">
@@ -31,7 +55,7 @@
 			<div class="container">
 				<div class="weak">
 					<!-- Weak Fallow Area -->
-					<p>CSC 174:Advanced Front-end Web:</p>
+					<p>CSC 174:Advanced Front End Web Development:</p>
 					<p>Project 4 Team Seoul</p>
 				</div>
 				<div class="terminal">
