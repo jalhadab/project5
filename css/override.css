@@ -1,0 +1,27 @@
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 95%;
+}
+
+body {
+	padding-top: 25px;
+	height: 100%;
+}
+
+html{
+	height: 100%;
+}
+
+.button.is-link {
+	background-color: steelblue;
+	-webkit-box-shadow: 1px 1px 1px 1px black;
+	box-shadow: 1px 1px 1px 1px black;
+}
+
+.button.is-link.is-light {
+	background-color: ivory;
+	-webkit-box-shadow: 1px 1px 1px 1px black;
+	box-shadow: 1px 1px 1px 1px black;
+}

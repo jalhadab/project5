@@ -10,7 +10,11 @@
 						<div>Summer 2020</div>
 					</a>
 				</div>
+				
+				<div class="button">
 				<a href="new.php">Student access form</a>
+				</div>
+				
 				<form class="strong">
 					<!-- Strong Fallow Area -->
 					<label for="username">Username:</label>
