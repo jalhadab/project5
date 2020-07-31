@@ -14,15 +14,15 @@ html{
 }
 
 .button.is-link {
-	background-color: steelblue;
-	color: black;
-	-webkit-box-shadow: 1px 1px 1px 1px black;
-	box-shadow: 1px 1px 1px 1px black;
+	background-color: #30475E;
+	color: #222831;
+	-webkit-box-shadow: 1px 1px 1px 1px #222831;
+	box-shadow: 1px 1px 1px 1px #222831;
 }
 
 .button.is-link.is-light {
 	background-color: ivory;
-	color: black;
-	-webkit-box-shadow: 1px 1px 1px 1px black;
-	box-shadow: 1px 1px 1px 1px black;
+	color: #222831;
+	-webkit-box-shadow: 1px 1px 1px 1px #222831;
+	box-shadow: 1px 1px 1px 1px #222831;
 }

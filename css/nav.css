@@ -3,7 +3,7 @@
 **************************************/
 
 header a {
-	color: khaki;
+	color: #C1A57B;
 	text-decoration: none;
 }
 
@@ -45,11 +45,11 @@ header a p {
 }
 
 .menu a {
-	border: 2px dotted khaki;
+	border: 2px dotted #C1A57B;
 	text-decoration: none;
 	display: block;
-	color: khaki;
-	background-color: black;
+	color: #C1A57B;
+	background-color: #222831;
 	font-size: 20px;
 	text-align: center;
 	padding: 5px 15px;
@@ -58,12 +58,12 @@ header a p {
 }
 
 .menu a:hover {
-	background-color: black;
+	background-color: #222831;
 	border: 2px solid;
 }
 
 header.container {
-	border-bottom: 1px solid khaki;
+	border-bottom: 1px solid #C1A57B;
 }
 
 .submenu {
@@ -86,8 +86,8 @@ header.container {
 **************************************/
 
 .menu li a.is-current {
-	color: black;
-	background-color: khaki;
+	color: #222831;
+	background-color: #C1A57B;
 }
 
 .menubtn:hover > .submenu, .submenu:hover {
