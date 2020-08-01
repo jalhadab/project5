@@ -20,9 +20,19 @@ html{
 	box-shadow: 1px 1px 1px 1px #222831;
 }
 
+.button.is-link:hover{
+	background-color: #C1A57B;
+	color: #ECECEC;
+}
+
 .button.is-link.is-light {
-	background-color: ivory;
+	background-color: #ECECEC;
 	color: #222831;
 	-webkit-box-shadow: 1px 1px 1px 1px #222831;
 	box-shadow: 1px 1px 1px 1px #222831;
+}
+
+.button.is-link.is-light:hover {
+	background-color: #222831;
+	color: #ECECEC;
 }
