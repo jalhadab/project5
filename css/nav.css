@@ -2,12 +2,12 @@
 			Base Styles
 **************************************/
 
-header a {
+header a, #seoul {
 	color: #C1A57B; 
 	text-decoration: none;
 }
 
-header a p {
+header a p{
 	margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@ header a p {
 	list-style: none;
 }
 
-.menu a {
+.menu a{
 	border: 2px dotted #C1A57B;
 	text-decoration: none;
 	display: block;
@@ -55,6 +55,24 @@ header a p {
 	padding: 5px 15px;
 	/* position: sticky; */
 	right: 0;
+}
+
+ #seoul {
+	border: 2px dotted #C1A57B;
+	text-decoration: none;
+	display: block;
+	color: #C1A57B;
+	background-color: #ECECEC;
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 15px;
+	/* position: sticky; */
+	right: 0;
+}
+
+#other {
+	color: #C1A57B;
+	background-color: #ECECEC;
 }
 
 .menu a:hover {
