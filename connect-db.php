@@ -1,11 +1,11 @@
 <?php
 // Database Variables (edit with your own server information)
 $server = 'localhost';
-$user = 'project4';
+$user = 'seoulp4';
 
-$pass = 'project4';
+$pass = 'seoulp4';
 
-$db = 'seoul_students';
+$db = 'seoulp4';
 
 
 // Connect to Database
