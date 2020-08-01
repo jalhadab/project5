@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `directory` (
   `id` int(25) NOT NULL,
-  `picture` varchar(100) NOT NULL,
+  `quote` varchar(1000) NOT NULL,
   `name` varchar(50) NOT NULL,
   `bio` varchar(5000) NOT NULL,
   `link` varchar(1000) NOT NULL
