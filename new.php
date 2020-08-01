@@ -8,14 +8,14 @@ include('connect-db.php');
 if (isset($_POST['submit'])) {
 	// get form data, making sure it is valid
 	$id = mysqli_real_escape_string($connection, htmlspecialchars($_POST['id']));
-	$picture = mysqli_real_escape_string($connection, htmlspecialchars($_POST['quote']));
+	$quote = mysqli_real_escape_string($connection, htmlspecialchars($_POST['quote']));
     $name = mysqli_real_escape_string($connection, htmlspecialchars($_POST['name']));
 	$bio = mysqli_real_escape_string($connection, htmlspecialchars($_POST['bio']));
 	$link = mysqli_real_escape_string($connection, htmlspecialchars($_POST['link']));
 
 
 	// check to make sure both fields are entered
-	if ($picture == '' || $name == '' || $bio == '' || $link == '') {
+	if ($quote == '' || $name == '' || $bio == '' || $link == '') {
 		// generate error message
 		$error = 'ERROR: Please fill in all required fields!';
 

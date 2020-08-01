@@ -32,8 +32,8 @@ if ($error != '') {
 	</div>
 	<div class="field">
 		<div class="control">
-			<strong>Picture Upload: *</strong>
-			<input type="file" name="fileToUpload" id="fileToUpload" value="<?php echo $picture; ?>" /><br><br>
+			<strong>Favorite quote: *</strong>
+			<input type="text" name="text" id="quote" value="<?php echo $quote; ?>" /><br><br>
 		</div>
 	</div>
 	<div class="field">
