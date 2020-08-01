@@ -43,7 +43,7 @@
 							<h4>Eunlim Kim</h4>
 							<p>Hello, my name is Eunlim Kim. I am a senior majoring in computer science, and my particular
 								interest is Human Computer Interaction (HCI). I was born in South Korea and came to United
-								States when I was 15 years old. I want to use my knwoledge in HCI to help people who has
+								States when I was 15 years old. I want to use my knowledge in HCI to help people who have
 							disadvantages.</p>
 						</div>
 						<a href="kim.php">Read more</a>
@@ -53,7 +53,7 @@
 					
 				</article>
 				<footer class="dir-footer">
-					<div>CSC 174: Advanced Front-end Web - Project 4</div>
+					<div>CSC 174: Advanced Front End Web Development - Project 4</div>
 				</footer>
 			</div>
 		</div>
