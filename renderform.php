@@ -33,7 +33,7 @@ if ($error != '') {
 	<div class="field">
 		<div class="control">
 			<strong>Favorite quote: *</strong>
-			<input type="text" name="text" id="quote" value="<?php echo $quote; ?>" /><br><br>
+			<input type="text" name="quote" id="quote" value="<?php echo $quote; ?>" /><br><br>
 		</div>
 	</div>
 	<div class="field">
@@ -43,7 +43,7 @@ if ($error != '') {
 	</div>
 	<div class="field">
 		<div class="control">
-			<strong>Bio: *</strong> <input type="text" class="textarea is-large" name="phone" value="<?php echo $bio; ?>"/><br>
+			<strong>Bio: *</strong> <input type="text" class="textarea is-medium" name="phone" value="<?php echo $bio; ?>"/><br>
 		</div>
 	</div>
 	<div class="field">

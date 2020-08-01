@@ -210,7 +210,7 @@ footer.persistent a:hover {
 }
 
 .persistent {
-	position: fixed;
+	/* position: fixed; */
 	left: 0;
 	width: 100%;
 }
