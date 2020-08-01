@@ -10,25 +10,25 @@ if (isset($_POST['submit'])) {
 	if (is_numeric($_POST['id'])) {
 		// get form data, making sure it is valid
 		$id = $_POST['id'];
-		$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['firstname']));
-		$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['lastname']));
-		$phone = mysqli_real_escape_string($connection, htmlspecialchars($_POST['phone']));
-		$email = mysqli_real_escape_string($connection, htmlspecialchars($_POST['email']));
+		$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['name']));
+		$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['quote']));
+		$phone = mysqli_real_escape_string($connection, htmlspecialchars($_POST['bio']));
+		$email = mysqli_real_escape_string($connection, htmlspecialchars($_POST['link']));
 
 		// check that firstname/lastname fields are both filled in
-		if ($firstname == '' || $lastname == '' || $phone == '' || $email == '') {
+		if ($name == '' || $quote == '' || $bio == '' || $link == '') {
 			// generate error message
 			$error = 'ERROR: Please fill in all required fields!';
 
 			//error, display form
-			renderForm($id, $firstname, $lastname, $phone, $email, $error);
+			renderForm($id, $name, $quote, $bio, $link, $error);
 
 		} else {
 			// save the data to the database
-			$result = mysqli_query($connection, "UPDATE directory SET firstname='$firstname', lastname='$lastname', phone='$phone', email='$email' WHERE id='$id'");
+			$result = mysqli_query($connection, "UPDATE directory SET name='$name', quote='$quote', bio='$bio', link='$link' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
-			header("Location: index.php");
+			header("Location: directory.php");
 		}
 	} else {
 		// if the 'id' isn't valid, display an error
@@ -46,13 +46,13 @@ if (isset($_POST['submit'])) {
 		// check that the 'id' matches up with a row in the databse
 		if($row) {
 			// get data from db
-			$firstname = $row['firstname'];
-			$lastname = $row['lastname'];
-			$phone = $row['phone'];
-			$email = $row['email'];
+			$name = $row['name'];
+			$quote = $row['quote'];
+			$bio = $row['bio'];
+			$link = $row['link'];
 
 			// show form
-			renderForm($id, $firstname, $lastname, $phone, $email, '');
+			renderForm($id, $quote, $name, $bio, $link, '');
 		} else {
 			// if no match, display result
 			echo "No results!";
