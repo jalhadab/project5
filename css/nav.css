@@ -70,11 +70,6 @@ header a p{
 	right: 0;
 }
 
-#other {
-	color: #C1A57B;
-	background-color: #ECECEC;
-}
-
 .menu a:hover {
 	background-color: #222831;
 	border: 2px solid;
