@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 
 	} else {
 		// save the data to the database
-		$result = mysqli_query($connection, "INSERT INTO yluo_phonelist (id, picture, name, bio, link) VALUES ('$id', '$picture','$name','$bio','$link')");
+		$result = mysqli_query($connection, "INSERT INTO directory (id, picture, name, bio, link) VALUES ('$id', '$picture','$name','$bio','$link')");
 
 		// once saved, redirect back to the view page
 		header("Location: index.php");
