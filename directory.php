@@ -13,7 +13,7 @@
 		<div class="background">
 			<div class="container">
 				<article>
-					<header>
+					<header class="direct">
 						<h2>Directory</h2>
 					</header>
 						<h3>Team Seoul</h3>

@@ -32,7 +32,7 @@ h1,
 h2,
 h3 {
  	font-family: "Montserrat", sans-serif;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 	border-bottom: 1px solid #ECECEC;
 }
 
@@ -58,15 +58,11 @@ article {
     padding: 15px 15px 15px 15px;
 }
 
-p {
-    margin: 0 auto;
-}
-
 ol {
     margin: 0 auto;
 }
 
-header h2 {
+.direct h2 {
     font-style: normal;
     margin: 1vh auto;
     background-color: #C1A57B;
@@ -127,6 +123,11 @@ header {
 	justify-content: space-between;
 	position: relative;
 	align-items: center;
+}
+
+p {
+	max-width: 600px;
+	justify-content: left;
 }
 
 /**************************************
@@ -246,3 +247,65 @@ footer.persistent a:hover {
 #space-img-kim{
 	margin-top: 25px;
 }
+
+.primary div {
+		text-decoration: none;
+		font-family: "Montserrat", sans-serif;
+		font-size: 20px;
+}
+
+/* Mobile Design */
+   
+
+@media(max-width: 930px)
+{
+	article {
+		display: block;
+	}
+   n
+}
+
+@media(max-width: 960px)
+{
+ 
+
+
+}
+
+@media(max-width: 760px)
+{
+  
+	.big-message h1 {
+		font-size: 25px; 
+	}
+	
+	 .top
+  {
+	  display: block;
+  }
+}
+
+@media(max-width: 600px)
+{
+	.z-pattern p, .z-pattern h2{
+		display: none;
+	}
+	
+	form {
+		max-width: 200px;
+	}
+	
+/* 	.loginbuttons {
+		max-width: 100px;
+	} */
+		
+	h2, h3, h4 {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+}
+
+
+
+
