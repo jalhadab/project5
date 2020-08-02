@@ -31,15 +31,20 @@
 					<label for="passcode">Password:</label>
 					<input type="password" name="passcode" id="passcode" placeholder="Password">
 					
-					<div class="loginbuttons">
+					
 					<div class="field is-grouped">
-						<div class="control">
-							<a href="directory.php" class="button is-link">Go!</a>
+						<div class="columns is-desktop">
+							<div class="column">
+								<div class="control">
+									<a href="directory.php" class="button is-link">Go!</a>
+								</div>
+							</div>
+							<div class="column">
+								<div class="control">
+									<a href="new.php" class="button is-link is-light">Add a new user</a>
+								</div>
+							</div>
 						</div>
-						<div class="control">
-							<a href="new.php" class="button is-link is-light">Add a new user</a>
-						</div>
-					</div>
 					</div>
 				</form>
 				

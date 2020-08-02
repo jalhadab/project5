@@ -270,20 +270,15 @@ a:hover {
 	.weak {
 		font-size: 10px;
 	}
+	
+	.bigmessage {
+			font-size: 15px;
+	}
 }
 
 
 @media(max-width: 760px)
 {
-  
-	.big-message h1 {
-		font-size: 25px; 
-	}
-	
-	h2 {
-		font-size: 15px;
-	}
-	
 	 .top
   {
 	  display: block;
@@ -302,11 +297,7 @@ a:hover {
 	}
 	
 	form {
-			max-width: 200px;
-	}
-	
-	.loginbuttons {
-		display: grid;
+		max-width: 200px;
 	}
 
 }
