@@ -18,8 +18,7 @@
 			<section class="container">
 				<div class="primary">
 					<!-- Primary Optical Area -->
-						<h1>CSC 174:</h1>
-						<div>Summer 2020</div>
+						<div>CSC 174 Summer 2020</div>
 				</div>
 				
 				<form class="strong">
@@ -48,8 +47,8 @@
 		</header>
 		<main class="big-message">
 			<!-- Some big center content -->
-			<h2>.</h2>
-			<h3>.</h3>
+			<h1>Explore CSC 174</h1>
+			<h2>Summer 2020 semester</h2>
 		</main>
 		<footer class="persistent">
 			<div class="container">

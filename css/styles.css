@@ -260,15 +260,8 @@ footer.persistent a:hover {
 	article {
 		display: block;
 	}
-   n
 }
 
-@media(max-width: 960px)
-{
- 
-
-
-}
 
 @media(max-width: 760px)
 {
@@ -284,7 +277,22 @@ footer.persistent a:hover {
 }
 
 @media(max-width: 600px)
-{
+{		
+
+	h2, h3, h4 {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	
+	header {
+		padding-top: 30px;
+	}
+
+	.background article {
+		display: block;
+	}
+}
+
 	.z-pattern p, .z-pattern h2{
 		display: none;
 	}
@@ -298,14 +306,11 @@ footer.persistent a:hover {
 		margin-left: 0px;
 		padding-left: 0px;
 	}
-		
-	h2, h3, h4 {
-		margin-bottom: 15px;
-		margin-top: 15px;
-	}
-
+	
+	.persistent{
+		display: block;
+	}	
 }
-
 
 
 

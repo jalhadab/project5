@@ -89,20 +89,4 @@ Which color? Delete incorrect one.
 			State Styles
 **************************************/
 
-@media (max-width: 600px){
-	header {
-		padding-top: 30px;
-	}
 
-	.background article {
-		display: block;
-	}
-
-	.column_1{
-		margin-bottom: 50px;
-	}
-
-	.column_2{
-		margin-bottom: 50px;
-	}
-}
