@@ -18,7 +18,9 @@
 			<section class="container">
 				<div class="primary">
 					<!-- Primary Optical Area -->
-						<div>CSC 174 Summer 2020</div>
+						<div class="is-hidden-mobile">CSC 174 - Summer 2020</div>
+						<div class="is-hidden-tablet">Explore CSC 174:</div>
+						<div class="is-hidden-tablet">Summer 2020 semester</div>
 				</div>
 				
 				<form class="strong">
@@ -33,7 +35,7 @@
 					
 					
 					<div class="field is-grouped">
-						<div class="columns is-desktop">
+						<div class="columns">
 							<div class="column">
 								<div class="control">
 									<a href="directory.php" class="button is-link">Go!</a>
@@ -52,8 +54,10 @@
 		</header>
 		<main class="big-message">
 			<!-- Some big center content -->
+			<div class="is-hidden-mobile">
 			<h1>Explore CSC 174</h1>
 			<h2>Summer 2020 semester</h2>
+			</div>
 		</main>
 		<footer class="persistent">
 			<div class="container">

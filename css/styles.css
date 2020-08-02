@@ -255,7 +255,6 @@ a:hover {
 }
 
 /* Mobile Design */
-   
 
 @media(max-width: 930px)
 {
@@ -264,15 +263,11 @@ a:hover {
 	}
 	
 	footer.persistent a {
-		font-size: 10px;
+		font-size: 15px;
 	}
 	
 	.weak {
 		font-size: 10px;
-	}
-	
-	.bigmessage {
-			font-size: 15px;
 	}
 }
 
