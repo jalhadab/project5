@@ -67,6 +67,10 @@ article {
 	padding: 25px 25px 25px 25px;
 }
 
+footer {
+	
+}
+
 form {
 	margin: 1vh 1vw;
 	display: flex;
@@ -160,7 +164,7 @@ a {
 }
 
 a:hover {
-	background-color: indigo;
+	background-color: #222831;
 }
 
 .dir-student div {
@@ -262,6 +266,10 @@ a:hover {
 	footer.persistent a {
 		font-size: 10px;
 	}
+	
+	.weak {
+		font-size: 10px;
+	}
 }
 
 
@@ -272,8 +280,8 @@ a:hover {
 		font-size: 25px; 
 	}
 	
-	.bigmessage h2 {
-		font-size: 20px;
+	h2 {
+		font-size: 15px;
 	}
 	
 	 .top

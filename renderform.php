@@ -11,7 +11,7 @@ function renderForm($id, $firstname, $lastname, $phone, $email, $error) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="css/override.css">
 </head>
-<body>
+<body class="formpage">
 
 <?php
 // if there are any errors, display them

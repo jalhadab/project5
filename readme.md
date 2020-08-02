@@ -1,6 +1,17 @@
 # Team Seoul
 
 ## Team Members (Project 3)
+- Molly Kilian
+- Leah Goodwin
+- Yilin Luo
+
+## To do - design
+- [ ] fix mobile design on homepage
+- [ ] style quotes
+- [ ] fix styling of links
+- [x] fix styling on form page
+
+## Team Members (Project 3)
 - Evan Pollack
 - Michael Bashner
 - Dan Zhang
