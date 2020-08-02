@@ -11,6 +11,8 @@ body {
 
 html{
 	height: 100%;
+	 overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .button.is-link {
