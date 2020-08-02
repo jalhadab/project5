@@ -149,20 +149,14 @@ footer.persistent {
 footer.persistent a {
 	color: #ECECEC;
 	text-decoration: none;
-	font-size: 2em;
-}
-
-footer.persistent a:hover {
-	color: gainsboro;
-    font-size: 2em;
-
+	font-size: 25px;
 }
 
 a {
 	text-decoration: none;
 	border: 1.5px dotted white;
 	padding: 4px;
-	background-color: #214B71;
+	background-color: #C1A57B;
 }
 
 a:hover {
@@ -263,6 +257,10 @@ a:hover {
 {
 	article {
 		display: block;
+	}
+	
+	footer.persistent a {
+		font-size: 10px;
 	}
 }
 

@@ -1,8 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 html{
 	overflow-x: hidden;
     overflow-y: hidden;
+	background: rgb(0,0,0);
+	background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(21,163,255,1) 100%);
+	height: 100$;
 }
 
 .button.is-link {
@@ -29,3 +32,25 @@ html{
 	color: #ECECEC;
 }
 
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 95%;
+}
+
+h1 {
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 1px #ECECEC;
+	color: #FECB89;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding-top: 25px;
+	margin: 0 auto;
+	color: #ECECEC;
+	height: 100%;
+}
