@@ -67,8 +67,12 @@ article {
 	padding: 25px 25px 25px 25px;
 }
 
+.background a {
+		margin: auto;
+}
+
 footer {
-	
+	padding-left: 25px;
 }
 
 form {
@@ -167,14 +171,24 @@ a:hover {
 	background-color: #222831;
 }
 
+#homepagelink {
+	border: none;
+	background-color: #FECB89;
+}
+
+#homepagelink:hover {
+	background-color: #FECB89;
+	color: #30475E;
+}
+
 .dir-student div {
 	justify-self: center;
 	max-width: 60%;
 }
 
 .dir-student h3 {
-	border-top: 1px solid gainsboro;
-	border-bottom: 1px solid gainsboro;
+	border-top: 1px solid #ECECEC;
+	border-bottom: 1px solid #ECECEC;
 	padding: 15px 15px 15px 15px;
 	margin: 0 auto;
 }
@@ -192,7 +206,7 @@ a:hover {
 }
 
 .dir-student a:hover {
-	background-color: gainsboro;
+	background-color: #ECECEC;
 	color: #222831;
 }
 
@@ -254,6 +268,14 @@ a:hover {
 	color: #FECB89;
 }
 
+.studentquote {
+	margin: auto;
+	width: 20%;
+	border: 1px solid #ECECEC;
+	padding: 10px;
+	margin-right: 25px;
+}
+
 /* Mobile Design */
 
 @media(max-width: 930px)
@@ -293,6 +315,10 @@ a:hover {
 	
 	form {
 		max-width: 200px;
+	}
+	
+	.dir-student {
+		display: block;
 	}
 
 }

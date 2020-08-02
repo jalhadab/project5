@@ -54,7 +54,7 @@
 						<li>CSC 174: ADVANCED FRONT-END WEB DEVELOPMENT </li>
 						<li>CSC 214: MOBILE APP DEVELOPMENT</li>
 					</ol>
-					<h2>Hobby</h2>
+					<h2>Hobbies</h2>
 					<p> I don't get to do my "hobbies" that often. However, I am into latte art. I started liking latte art last summer when I worked at Ralph's Coffee Shop. At first it's pretty tricky, but you get the hang of it. I am not that great. I am also into playing Animal Crossing.</p>
 				</article>
 				<footer>

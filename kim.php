@@ -55,7 +55,7 @@
 								<li>CSC 214: MOBILE APP DEVELOPMENT</li>
 								<li>CSC 242: ARTIFICIAL INTELLIGENCE</li>
 							</ol>
-						<h2>Hobby</h2>
+						<h2>Hobbies</h2>
 							<p>In United States, I usually watch movies with my friends and cook. I love Science Fiction, action, and comics. I try to cook various foods including simple italian food, korean traditional dishes and typical brunch menu. In Korea, I mostly spend time with my dog, Abong (corgi). I usually walk him for at least one hour but he never gets enough of it. I also love trying new restaurants and adding good ones to my favorite restaurant list.</p>
 				</article>
 				<footer>

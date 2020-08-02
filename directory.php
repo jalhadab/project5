@@ -3,7 +3,7 @@
 	<body>
 		<header class="container">
 			<div>
-			<a href="index.php">
+			<a href="index.php" id="homepagelink">
 				<h1>CSC 174</h1>
 				<p>Students</p>
 			</a>

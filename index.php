@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Project 3 Seoul Team">
+		<meta name="description" content="Project 4 Seoul Team">
 		<title><?php echo $customTitle;?> | Seoul Project 4</title>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/nav.css">
