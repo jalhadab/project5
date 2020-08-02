@@ -18,7 +18,7 @@
 					</header>
 						<h3>Team Seoul</h3>
 					<section class="dir-student space-below">
-						<div class="studentquote">"This is a quote to powerful to name."</div>
+						<div class="studentquote">"This is a quote too powerful to name."</div>
 						<div>
 							<h4>Bo Wu</h4>
 							<p>My name is Bo Wu. I am a rising junior student in University of Rochester majoring in
@@ -29,7 +29,7 @@
 						<a href="bo.php">Read more</a>
 					</section>
 					<section class="dir-student space-below">
-						<div class="studentquote">"This is a quote to powerful to name."</div>
+						<div class="studentquote">"This is a quote too powerful to name."</div>
 						<div>
 							<h4>Emely Rosa</h4>
 							<p>My name is Emely Rosa-Ortiz. I am a rising senior student in University of Rochester majoring
@@ -38,7 +38,7 @@
 						<a href="emely.php">Read more</a>
 					</section>
 					<section class="dir-student">
-						<div class="studentquote">"This is a quote to powerful to name."</div>
+						<div class="studentquote">"This is a quote too powerful to name."</div>
 						<div>
 							<h4>Eunlim Kim</h4>
 							<p>Hello, my name is Eunlim Kim. I am a senior majoring in computer science, and my particular

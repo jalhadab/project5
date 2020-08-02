@@ -19,7 +19,6 @@ header a p{
 	display: flex;
 	justify-content: flex-end;
 	padding: 0;
-	/* margin: 0; */
 	list-style-type: none;
 }
 
@@ -27,14 +26,7 @@ header a p{
 			Module Styles
 **************************************/
 
-/* Menu from Qi Miao */
 .menu {
-	/* width: 100%; */
-	/* position: fixed; */
-	/* top: 0; */
-	/* right: 0; */
-	/* display: inline-block; */
-	/* margin: 0 auto; */
     font-family: "Roboto", sans-serif;
 }
 
@@ -53,7 +45,6 @@ header a p{
 	font-size: 20px;
 	text-align: center;
 	padding: 5px 15px;
-	/* position: sticky; */
 	right: 0;
 }
 
@@ -66,13 +57,13 @@ header a p{
 	font-size: 20px;
 	text-align: center;
 	padding: 5px 15px;
-	/* position: sticky; */
 	right: 0;
 }
 
 .menu a:hover {
 	background-color: #222831;
 	border: 2px solid;
+	color: #FECB89;
 }
 
 header.container {
@@ -87,11 +78,6 @@ header.container {
 	display: none;
 	z-index: 1;
 	padding: 0;
-	/* margin: 0 auto; */
-}
-
-.submenu li {
-	/* margin: 0; */
 }
 
 /**************************************
@@ -102,6 +88,11 @@ header.container {
 	color: #222831;
 	background-color: #C1A57B;
 }
+
+.menu li a.is-current:hover {
+	color: #30475E;
+}
+
 
 .menubtn:hover > .submenu, .submenu:hover {
 	visibility: visible;

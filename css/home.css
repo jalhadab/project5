@@ -44,22 +44,6 @@ h2 {
 			Module Styles
 **************************************/
 
-/*
-Which color? Delete incorrect one.
- */
-.background a {
-	text-decoration: none;
-	/*color: silver;*/
-	border: 1.5px dotted white;
-	padding: 4px;
-	/*color: #D9CFC0;*/
-	background-color: #214B71;
-}
-
-.background a:hover {
-	background-color: indigo;
-}
-
 .column_1 {
 	text-align: center;
 	grid-column: 1/2;
