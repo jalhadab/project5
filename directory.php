@@ -18,10 +18,12 @@
 					</header>
 					
 					<?php
-// connect to the database
-include('connect-db.php');
-$result = mysqli_query($connection, "SELECT * FROM directory");
-?>
+  // connect to the database
+  include('connect-db.php');
+
+  // get results from database
+  $result = mysqli_query($connection, "SELECT * FROM directory");
+  ?>
 
 <table>
   <tr>
@@ -52,7 +54,6 @@ while($row = mysqli_fetch_array( $result )) {
 </table>
 
   <a href="new.php">Add a new record</a>
-<?php } ?>
 					
 					
 						<h3>Team Seoul</h3>
@@ -106,3 +107,7 @@ while($row = mysqli_fetch_array( $result )) {
 		<?php include "inc/scripts.php"?>
 	</body>
 </html>
+<?php
+mysqli_free_result($result);
+mysqli_close($connection);
+?>
