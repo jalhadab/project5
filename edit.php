@@ -10,22 +10,22 @@ if (isset($_POST['submit'])) {
 	if (is_numeric($_POST['id'])) {
 		// get form data, making sure it is valid
 		$id = $_POST['id'];
-		$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['name']));
+		$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['fullname']));
 		$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['quote']));
 		$phone = mysqli_real_escape_string($connection, htmlspecialchars($_POST['bio']));
 		$email = mysqli_real_escape_string($connection, htmlspecialchars($_POST['link']));
 
 		// check that firstname/lastname fields are both filled in
-		if ($name == '' || $quote == '' || $bio == '' || $link == '') {
+		if ($quote == '' || $fullname == '' || $bio == '' || $link == '') {
 			// generate error message
 			$error = 'ERROR: Please fill in all required fields!';
 
 			//error, display form
-			renderForm($id, $name, $quote, $bio, $link, $error);
+			renderForm($id, $quote, $fullname, $bio, $link, $error);
 
 		} else {
 			// save the data to the database
-			$result = mysqli_query($connection, "UPDATE directory SET name='$name', quote='$quote', bio='$bio', link='$link' WHERE id='$id'");
+			$result = mysqli_query($connection, "UPDATE directory SET quote='$quote', fullname='$name' bio='$bio', link='$link' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
 			header("Location: directory.php");
@@ -46,13 +46,13 @@ if (isset($_POST['submit'])) {
 		// check that the 'id' matches up with a row in the databse
 		if($row) {
 			// get data from db
-			$name = $row['name'];
 			$quote = $row['quote'];
+			$fullname = $row['fullname'];
 			$bio = $row['bio'];
 			$link = $row['link'];
 
 			// show form
-			renderForm($id, $quote, $name, $bio, $link, '');
+			renderForm($id, $quote, $fullname, $bio, $link, '');
 		} else {
 			// if no match, display result
 			echo "No results!";
