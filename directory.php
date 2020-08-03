@@ -16,6 +16,45 @@
 					<header class="direct">
 						<h2>Directory</h2>
 					</header>
+					
+					<?php
+// connect to the database
+include('connect-db.php');
+$result = mysqli_query($connection, "SELECT * FROM directory");
+?>
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>quote</th>
+    <th>name</th>
+    <th>bio</th>
+    <th>link</th>
+  </tr>
+<?php
+// loop through results of database query, displaying them in the table
+while($row = mysqli_fetch_array( $result )) {
+?>
+  <tr>
+    <td><?php echo $row['id']; ?></td>
+    <td><?php echo $row['quote']; ?></td>
+    <td><?php echo $row['name']; ?></td>
+    <td><?php echo $row['bio']; ?></td>
+      <td><?php echo $row['link']; ?></td>
+    <td><a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+    <td><a onclick="return confirm('Are you sure you want to delete ID: <?php echo $row["id"]; ?>?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
+
+  </tr>
+<?php
+// close the loop
+}
+?>
+</table>
+
+  <a href="new.php">Add a new record</a>
+<?php } ?>
+					
+					
 						<h3>Team Seoul</h3>
 					<section class="dir-student space-below">
 						<div class="studentquote">"This is a quote too powerful to name."</div>
