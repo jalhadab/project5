@@ -8,13 +8,13 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 	$id = $_GET['id'];
 
 	// delete the entry
-	$result = mysqli_query($connection, "DELETE FROM lgoodwin_phonelist WHERE id=$id");
+	$result = mysqli_query($connection, "DELETE FROM directory WHERE id=$id");
 
 	// redirect back to the homepage to see the results
-	header("Location: index.php");
+	header("Location: directory.php");
 
 } else {
 	// if id isn't set, or isn't valid, redirect back to homepage
-	header("Location: index.php");
+	header("Location: directory.php");
 }
 ?>
