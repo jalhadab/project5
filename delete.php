@@ -11,10 +11,10 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 	$result = mysqli_query($connection, "DELETE FROM directory WHERE id=$id");
 
 	// redirect back to the homepage to see the results
-	header("Location: directory.php");
+	header("Location: index.php");
 
 } else {
 	// if id isn't set, or isn't valid, redirect back to homepage
-	header("Location: directory.php");
+	header("Location: index.php");
 }
 ?>
