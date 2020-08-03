@@ -41,7 +41,7 @@ function renderForm($id, $quote, $fullname, $bio, $link, $error)
 				<div class="field">
 					<div class="control">
 						<strong>Bio: *</strong>
-						<input type="text" name="bio" value="<?php echo $bio; ?>" /><br>
+						<input type="text" class="textarea is-normal" name="bio" value="<?php echo $bio; ?>" /><br>
 					</div>
 				</div>
 
@@ -56,15 +56,14 @@ function renderForm($id, $quote, $fullname, $bio, $link, $error)
 					<div>* required</div>
 					<div class="field is-grouped">
 						<div class="control">
-							<input class= button is-link" type="submit" name="submit" value="Submit">
+							<input class="button is-link" type="submit" name="submit" value="Submit">
+						</div>
+						<div class="control">
+							<a href="." class="button is-link is-light">Cancel</a>
 						</div>
 					</div>
 			</form>
 
-			<div class="control">
-				<br>
-				<a href="." class="button is-link is-light">Cancel</a>
-			</div>
 		</div>
 
 	</body>

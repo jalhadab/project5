@@ -54,7 +54,7 @@
 
         <h3>Other Teams</h3>
         <!-- /* feed in other students here from the data form */ -->
-        <section class="dir-student space-below">
+        
 
           <?php
           // connect to the database
@@ -83,8 +83,8 @@
                     <p><?php echo $row['bio']; ?></p>
                   </div>
                   <a href="http://<?php echo $row['link']; ?>/" target="_blank">Read more</a>
-                  <a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a></td>
-                  <a onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+                  <a href="edit.php?id=<?php echo $row['id']; ?>" class="buttonslink">Edit</a></td>
+                  <a onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo $row['id']; ?>" class="buttonslight">Delete</a>
                 </section>
                 <?php
                 // close the loop
@@ -103,12 +103,7 @@
               
             </table>
           </div>
-        </section>
-
-        <div>
-          <br>
-          <a href="new.php">Add a new record</a>
-        </div>
+       
 </body>
 
 </html>

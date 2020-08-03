@@ -261,6 +261,11 @@ a:hover {
 	text-decoration: none;
 	color: currentcolor;
 	justify-self: flex-end;
+	margin-left: 20px;
+}
+
+.buttonslight, .buttonslink {
+	background-color: #222831;
 }
 
 .dir-student a:hover {

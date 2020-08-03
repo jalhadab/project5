@@ -6,6 +6,9 @@
 - Leah Goodwin
 - Yilin Luo
 
+## Notes
+- The login is a placeholder for project 5
+
 ## To do - design
 - [x] fix mobile design on homepage
 - [x] style quotes
