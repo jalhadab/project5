@@ -1,6 +1,7 @@
+
 # Team Seoul
 
-## Team Members (Project 3)
+## Team Members (Project 4)
 - Molly Kilian
 - Leah Goodwin
 - Yilin Luo
@@ -10,6 +11,11 @@
 - [ ] style quotes
 - [ ] fix styling of links
 - [x] fix styling on form page
+
+## Yilin (IA)
+
+- created the form in CURD format
+- helped debug
 
 ## Team Members (Project 3)
 - Evan Pollack
