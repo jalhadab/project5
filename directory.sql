@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 29, 2020 at 03:57 PM
+-- Generation Time: Aug 03, 2020 at 02:34 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -19,41 +19,50 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `seoul_students`
+-- Database: `seoulp4`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `directory`
+-- Table structure for table `phonelist`
 --
 
 CREATE TABLE `directory` (
   `id` int(11) NOT NULL,
-  `quote` varchar(1000) NOT NULL,
-  `fullname` varchar(50) NOT NULL,
-  `bio` varchar(5000) NOT NULL,
-  `link` varchar(1000) NOT NULL
+  `quote` varchar(500) NOT NULL,
+  `fullname` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `directory` (`id`, `quote`, `fullname`, `bio`, `link`) VALUES
-(1, 'test', 'testubg', 'adfs', 'adadadadadasd');
+--
+-- Dumping data for table `phonelist`
+--
 
+INSERT INTO `directory` (`id`, `quote`, `fullname`) VALUES
+(1, 'Placholder', 'Delete Me!'),
+(2, 'Allen', 'Key');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `directory`
+-- Indexes for table `phonelist`
 --
 ALTER TABLE `directory`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `phonelist`
+--
+ALTER TABLE `directory`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-ALTER TABLE `directory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
