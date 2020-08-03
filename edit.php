@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
 			$result = mysqli_query($connection, "UPDATE directory SET quote='$quote', fullname='$fullname', bio='$bio', link='$link' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
-			header("Location: index.php");
+			header("Location: directory.php");
 		}
 	} else {
 		// if the 'id' isn't valid, display an error
