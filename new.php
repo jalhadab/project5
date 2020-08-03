@@ -8,10 +8,9 @@ include('connect-db.php');
 if (isset($_POST['submit'])) {
 	// get form data, making sure it is valid
 	$quote = mysqli_real_escape_string($connection, htmlspecialchars($_POST['quote']));
-    $fullname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['fullname']));
+	$fullname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['fullname']));
 	$bio = mysqli_real_escape_string($connection, htmlspecialchars($_POST['bio']));
 	$link = mysqli_real_escape_string($connection, htmlspecialchars($_POST['link']));
-
 
 	// check to make sure both fields are entered
 	if ($quote == '' || $fullname == '' || $bio == '' || $link == '') {
@@ -23,10 +22,10 @@ if (isset($_POST['submit'])) {
 
 	} else {
 		// save the data to the database
-		$result = mysqli_query($connection, "INSERT INTO directory (quote, fullname, bio, email) VALUES ('$quote','$fullname','$bio','$link')");
+		$result = mysqli_query($connection, "INSERT INTO directory (quote, fullname, bio, link) VALUES ('$quote', '$fullname', '$bio', '$link')");
 
 		// once saved, redirect back to the view page
-		header("Location: directory.php");
+		header("Location: index.php");
 	}
 } else {
 	// if the form hasn't been submitted, display the form
