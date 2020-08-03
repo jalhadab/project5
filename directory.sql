@@ -29,12 +29,16 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `directory` (
-  `id` int(25) NOT NULL,
+  `id` int(11) NOT NULL,
   `quote` varchar(1000) NOT NULL,
-  `name` varchar(50) NOT NULL,
+  `fullname` varchar(50) NOT NULL,
   `bio` varchar(5000) NOT NULL,
   `link` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `directory` (`id`, `quote`, `fullname`, `bio`, `link`) VALUES
+(1, 'test', 'testubg', 'adfs', 'adadadadadasd');
+
 
 --
 -- Indexes for dumped tables
@@ -50,3 +54,6 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+ALTER TABLE `directory`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
