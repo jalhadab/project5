@@ -1,6 +1,6 @@
 <?php
 // creates the edit record form
-function renderForm($id, $firstname, $lastname, $phone, $email, $error) {
+function renderForm($id, $quote, $fullname, $bio, $link, $error) {
 ?>
 <!doctype html>
 <html>
@@ -25,30 +25,30 @@ if ($error != '') {
 
 <form action="" method="post">
 	<input type="hidden" name="id" value="<?php echo $id; ?>">
-	<div class="field">
+	<!-- <div class="field">
 		<div class="control">
 			<strong>ID: *</strong> <input type="text" name="firstname" value="<?php echo $id; ?>"/><br><br>
 		</div>
-	</div>
+	</div> -->
 	<div class="field">
 		<div class="control">
 			<strong>Favorite quote: *</strong>
-			<input type="text" name="quote" id="quote" value="<?php echo $quote; ?>" /><br><br>
+			<input type="text" name="quote" value="<?php echo $quote; ?>" /><br><br>
 		</div>
 	</div>
 	<div class="field">
 		<div class="control">
-			<strong>Name: *</strong> <input type="text" name="lastname" value="<?php echo $name; ?>"/><br>
+			<strong>Name: *</strong> <input type="text" name="fullname" value="<?php echo $fullname; ?>"/><br>
 		</div>
 	</div>
 	<div class="field">
 		<div class="control">
-			<strong>Bio: *</strong> <input type="text" class="textarea is-medium" name="phone" value="<?php echo $bio; ?>"/><br>
+			<strong>Bio: *</strong> <input type="text" name="bio" class="textarea is-medium"  value="<?php echo $bio; ?>"/><br>
 		</div>
 	</div>
 	<div class="field">
 		<div class="control">
-			<strong>Link: *</strong> <input type="text" name="email" value="<?php echo $link; ?>"/><br>
+			<strong>Link: *</strong> <input type="text" name="link" value="<?php echo $link; ?>"/><br>
 		</div>
 	</div>
 	<div>* required</div>
