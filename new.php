@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 		$result = mysqli_query($connection, "INSERT INTO directory (quote, fullname, bio, link) VALUES ('$quote', '$fullname', '$bio', '$link')");
 
 		// once saved, redirect back to the view page
-		header("Location: index.php");
+		header("Location: directory.php");
 	}
 } else {
 	// if the form hasn't been submitted, display the form
