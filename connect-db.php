@@ -1,22 +1,22 @@
 <?php
 // Database Variables (edit with your own server information)
-/*$server = 'localhost';
+$server = 'localhost';
 $user = 'seoulp4';
 
 $pass = 'seoulp4';
 
 $db = 'seoulp4';
-*/
+
 /*
 $server = 'localhost';
 $user = 'project4';
 $pass = 'COFFEE';
 $db = 'directory';
 */
-$server = '66.147.242.186';
-$user = 'urcscon3_seoul';
-$pass = 'coffee1N/21!';
-$db = 'urcscon3_seoul';
+// $server = '66.147.242.186';
+// $user = 'urcscon3_seoul';
+// $pass = 'coffee1N/21!';
+// $db = 'urcscon3_seoul';
 
 
 // Connect to Database
