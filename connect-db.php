@@ -14,7 +14,7 @@ $pass = 'COFFEE';
 $db = 'directory';
 */
 $server = '66.147.242.186';
-$user = 'urcscon3';
+$user = 'urcscon3_seoul';
 $pass = 'coffee1N/21!';
 $db = 'urcscon3_seoul';
 
