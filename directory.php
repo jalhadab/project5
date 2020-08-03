@@ -32,6 +32,7 @@
     <th>name</th>
     <th>bio</th>
     <th>link</th>
+	<th colspan="2"><em>Delete/ Edit</em></th>
   </tr>
 <?php
 // loop through results of database query, displaying them in the table
