@@ -8,8 +8,8 @@
 
 ## To do - design
 - [x] fix mobile design on homepage
-- [ ] style quotes
-- [ ] fix styling of links
+- [x] style quotes
+- [x] fix styling of links
 - [x] fix styling on form page
 
 ## Yilin (IA)
