@@ -25,39 +25,6 @@
 				// get results from database
 				$result = mysqli_query($connection, "SELECT * FROM directory");
 				?>
-				<div class="data_table">
-					<table>
-						<tr>
-							<!-- <th>id</th> -->
-							<th>quote</th>
-							<th>name</th>
-							<th>bio</th>
-							<th>link</th>
-							<th colspan="2"><em>Delete/ Edit</em></th>
-						</tr>
-						<?php
-						// loop through results of database query, displaying them in the table
-						while ($row = mysqli_fetch_array($result)) {
-						?>
-							<tr>
-								<!-- <td><?php echo $row['id']; ?></td> -->
-								<td><?php echo $row['quote']; ?></td>
-								<td><?php echo $row['fullname']; ?></td>
-								<td><?php echo $row['bio']; ?></td>
-								<td><?php echo $row['link']; ?></td>
-								<td><a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a></td>
-								<td><a onclick="return confirm('Are you sure you want to delete: <?php echo $row["fullname"]; ?>?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
-
-							</tr>
-						<?php
-							// close the loop
-						}
-						?>
-					</table>
-				</div>
-
-				<a href="new.php">Add a new record</a>
-
 
 				<h3>Team Seoul</h3>
 				<section class="dir-student space-below">
@@ -92,15 +59,70 @@
 					<a href="kim.php">Read more</a>
 				</section>
 				<h3>Other Teams</h3>
-				/* feed in other students here from the data form */
-				<section class="dir-student space-below">
-					<div class="studentquote">"Quote."</div>
+				
+				
+					<section class="dir-student space-below">
+					<div class="studentquote">"quote."</div>
 					<div>
-						<h4>Name</h4>
-						<p>biography</p>
+						<h4>name</h4>
+						<p>bio</p>
 					</div>
-					<a href="link">Read more</a>
-				</section>
+					<a href="link"Read more</a>
+					</section>
+					
+						<?php
+						// loop through results of database query, displaying them in the table
+						while ($row = mysqli_fetch_array($result)) {
+						?>
+							<section class="dir-student space-below">
+								
+								<div class="studentquote"><?php echo $row['quote']; ?></div>
+								<div>
+									<h4><?php echo $row['fullname']; ?></h4>
+									<p><?php echo $row['bio']; ?></p>
+								</div>
+								<a href="<?php echo $row['link']; ?>">Read more</a>
+								
+								
+						<?php
+							// close the loop
+						}
+						?>
+						</section>
+						
+						<div class="data_table">
+					<table>
+						<tr>
+							<!-- <th>id</th> -->
+							<th>quote</th>
+							<th>name</th>
+							<th>bio</th>
+							<th>link</th>
+							<th colspan="2"><em>Delete/ Edit</em></th>
+						</tr>
+						<?php
+						// loop through results of database query, displaying them in the table
+						while ($row = mysqli_fetch_array($result)) {
+						?>
+							<tr>
+								<!-- <td><?php echo $row['id']; ?></td> -->
+								<td><?php echo $row['quote']; ?></td>
+								<td><?php echo $row['fullname']; ?></td>
+								<td><?php echo $row['bio']; ?></td>
+								<td><?php echo $row['link']; ?></td>
+								<td><a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+								<td><a onclick="return confirm('Are you sure you want to delete: <?php echo $row["fullname"]; ?>?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
+
+							</tr>
+						<?php
+							// close the loop
+						}
+						?>
+					</table>
+				</div>
+
+				<a href="new.php">Add a new record</a>
+			
 			</article>
 			<footer class="dir-footer">
 				<div>CSC 174: Advanced Front End Web Development - Project 4</div>
