@@ -24,8 +24,8 @@
   // get results from database
   $result = mysqli_query($connection, "SELECT * FROM directory");
   ?>
-
-<table>
+<div class="data_table">
+<table >
   <tr>
     <th>id</th>
     <th>quote</th>
@@ -52,6 +52,7 @@ while($row = mysqli_fetch_array( $result )) {
 }
 ?>
 </table>
+</div>
 
   <a href="new.php">Add a new record</a>
 					
