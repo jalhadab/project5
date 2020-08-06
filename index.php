@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Project 4 Seoul Team">
-		<title><?php echo $customTitle;?> | Seoul Project 4</title>
+		<meta name="description" content="Project 5 Seoul Team">
+		<title><?php echo $customTitle;?> | Seoul Project 5</title>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
@@ -22,24 +22,38 @@
 						<div class="is-hidden-tablet">Summer 2020 semester</div>
 				</div>
 				
-				<form class="strong">
+				<form class="field">
 					<!-- Strong Fallow Area -->
 					<div>Student login:</div>
+					<!-- TODO: Make this not a div so maybe a h#? -->
 					
-
-					<label for="username">Username:</label>
-					<input type="text" name="username" id="username" placeholder="Username">
-					<label for="passcode">Password:</label>
-					<input type="password" name="passcode" id="passcode" placeholder="Password">
-					
-					
-					<div class="field is-grouped">
-						<div class="columns">
-							<div class="column">
+					<div class="field is-horizontal">
+						<div class="field-label">
+							<label for="username" class="label has-text-white">Username:</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
 								<div class="control">
-									<a href="directory.php" class="button is-link">Go!</a>
+									<input type="text" name="username" id="username" placeholder="Username" class="input">
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="field is-horizontal">
+						<div class="field-label">
+							<label for="passcode" class="label has-text-white">Password:</label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<div class="control">
+									<input type="password" name="passcode" id="passcode" placeholder="Password" class="input">
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="field">
+						<div class="control is-pulled-right">
+							<a href="directory.php" class="button is-link">Go!</a>
 						</div>
 					</div>
 				</form>
