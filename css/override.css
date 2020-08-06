@@ -51,8 +51,8 @@ body {
 	margin: 0 auto;
 	color: #ECECEC;
 	height: 100%;
-	background: rgb(0,0,0);
-	background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(21,163,255,1) 100%);
+	background-image: url("../images/background.png");
+	background-repeat:repeat;
 }
 
 .formpage strong {
