@@ -37,8 +37,8 @@
               in Missouri. I am also an international student from Anhui, China. I am passionate about
               video games and many things associated with games since I was in my primary school.</p>
           </div>
-          <a href="http://csc174.org/lab05/bwu18/">Read more</a>
-          <a href="">Edit</a>
+          <a href="http://csc174.org/lab05/bwu18/" target="_blank">Read more</a>
+          <a href="renderform.php">Edit</a>
           <a href="">Delete</a>
         </section>
         <section class="dir-student space-below">
@@ -48,8 +48,8 @@
             <p>My name is Emely Rosa-Ortiz. I am a rising senior student in University of Rochester majoring
               in computer science. I am from New York City. I am passionate about coffee and latte art.</p>
           </div>
-          <a href="http://csc174.org/lab05/erosa4/">Read more</a>
-          <a href="">Edit</a>
+          <a href="http://csc174.org/lab05/erosa4/" target="_blank">Read more</a>
+          <a href="renderform.php">Edit</a>
           <a href="">Delete</a>
         </section>
         <section class="dir-student">
@@ -61,8 +61,8 @@
               States when I was 15 years old. I want to use my knowledge in HCI to help people who have
               disadvantages.</p>
           </div>
-          <a href="http://csc174.org/lab05/ekim69/">Read more</a>
-          <a href="">Edit</a>
+          <a href="http://csc174.org/lab05/ekim69/" target="_blank">Read more</a>
+          <a href="renderform.php">Edit</a>
           <a href="">Delete</a>
         </section>
 
