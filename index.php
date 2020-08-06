@@ -59,7 +59,7 @@
 				<div class="weak">
 					<!-- Weak Fallow Area -->
 					<p>CSC 174: Advanced Front End Web Development:</p>
-					<p>Project 4 Team Seoul</p>
+					<p>Project 5 Team Seoul</p>
 				</div>
 				<div class="terminal">
 					<!-- Terminal Area -->
