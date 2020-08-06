@@ -59,7 +59,7 @@ function renderForm($id, $quote, $fullname, $bio, $link, $error)
 							<input class="button is-link" type="submit" name="submit" value="Submit">
 						</div>
 						<div class="control">
-							<a href="." class="button is-link is-light">Cancel</a>
+							<a href="directory.php" class="button is-link is-light">Cancel</a>
 						</div>
 					</div>
 			</form>

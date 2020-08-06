@@ -41,11 +41,6 @@
 									<a href="directory.php" class="button is-link">Go!</a>
 								</div>
 							</div>
-							<div class="column">
-								<div class="control">
-									<a href="new.php" class="button is-link is-light">Add a new user</a>
-								</div>
-							</div>
 						</div>
 					</div>
 				</form>
