@@ -1,11 +1,17 @@
 <?php
 // Database Variables (edit with your own server information)
-$server = 'localhost';
-$user = 'seoulp4';
+$server = '66.147.242.186';
+$user = 'urcscon3_seoul_f';
+$pass = 'IeT94T20mjAT';
+$db = 'urcscon3_seoul_final';
 
-$pass = 'seoulp4';
 
-$db = 'seoulp4';
+// $server = 'localhost';
+// $user = 'seoulp4';
+
+// $pass = 'seoulp4';
+
+// $db = 'seoulp4';
 
 /*
 $server = 'localhost';
