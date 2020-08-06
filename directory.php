@@ -1,5 +1,12 @@
+<?php
+	// connect to the database
+	include('./inc/connect-db.php');
+	// get results from database
+	$result = mysqli_query($connection, "SELECT * FROM seoul_directory");
+?>
 <?php $customTitle = "Directory"; ?>
 <?php include "inc/html-top.php" ?>
+
 
 <body>
   <header class="container">
