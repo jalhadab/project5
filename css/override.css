@@ -217,6 +217,16 @@ p {
 	background-color: #EA481F;
 }
 
+a.adder{
+	background-color:#30475E;
+	color: white;
+	border-radius: 7px;
+	margin-top: 20px;
+}
+
+a.adder:hover, .menu a:hover{
+	color:silver;
+}
 
 table, th, td {
     border:none

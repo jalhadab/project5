@@ -117,7 +117,7 @@
             </table>
           </div>
           <footer>
-          <p>Add a New Student Record</p>
+          <a class = "button adder" href="new.php">+ Add a New Student Record</a>
           </footer>
        
 </body>
