@@ -71,12 +71,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		<p>Please fill out this form to reset your password.</p>
 		<form class = "field" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
 			 <div class="<?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
-				<label class="label">New Password: </label>
+				<label class="label blieg">New Password: </label>
 				<input type="password" name="new_password" value="<?php echo $new_password; ?>" class="input">
 				<span class="help"><?php echo $new_password_err; ?></span>
 			</div>
 			<div class="<?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-				<label class="label">Confirm Password: </label>
+				<label class="label blieg">Confirm Password: </label>
 				<input type="password" name="confirm_password" class="input">
 				<span class="help"><?php echo $confirm_password_err; ?></span>
 			</div>
