@@ -52,7 +52,7 @@
 							<p><?php echo $row['about']; ?></p>
 						</div>
 						<nav class="menu">
-							<a class="button" href="<?php echo $row['website']; ?>" target="_blank"><?php echo $row['firstname']; ?>'s Website</a>
+							<a class="button" href="<?php echo $row['website']; ?>" target="_blank"><?php echo $row['firstname']; ?>'s Website <i class="fa fa-external-link"></i></a>
 							<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
 								<a class="button" href="edit.php?id=<?php echo htmlspecialchars($row['id']); ?>">Edit</a>
 								<a class="button deleter" onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo htmlspecialchars($row['id']); ?>">Delete</a>
