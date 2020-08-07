@@ -106,7 +106,6 @@ $customTitle="Sign Up";
 		<link rel="stylesheet" type="text/css" href="css/override.css">
 	</head>
 	<body>
-		<div>CSC 174 - Summer 2020</div>
 		<h1>Sign Up</h1>
 		<p>Please fill this form to create an account.</p>
 		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
