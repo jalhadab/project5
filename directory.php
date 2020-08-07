@@ -21,7 +21,7 @@
 					<?php } ?>
 					</a>
 					<nav class="menu">
-						
+				
 						<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
 							<a class = "button" href="index.php">Home</a>
 							<a class = "button" href="reset-password.php">Reset Password</a>
@@ -29,6 +29,7 @@
 						<?php } else { ?>
 							<a class = "button" href="index.php">← Home/Login</a>
 						<?php } ?>
+					
 					</nav>
 				</div>
 			</div>
