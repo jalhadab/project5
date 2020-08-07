@@ -442,7 +442,9 @@ a:hover {
 .studentquote {
 	margin: auto;
 	width: 20%;
-	border: 1px solid #ECECEC;
 	padding: 10px;
 	margin-right: 25px;
+}
+.menu{
+	margin: auto;
 }
