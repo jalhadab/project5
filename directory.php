@@ -24,8 +24,8 @@
 						
 						<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
 							<a class = "button" href="index.php">Home</a>
-							<a class = "button deleter" href="logout.php">Log Out</a>
 							<a class = "button" href="reset-password.php">Reset Password</a>
+							<a class = "button deleter" href="logout.php">Log Out</a>
 						<?php } else { ?>
 							<a class = "button" href="index.php">Home/Login</a>
 						<?php } ?>
