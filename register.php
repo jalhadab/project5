@@ -105,30 +105,37 @@ $customTitle="Sign Up";
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 		<link rel="stylesheet" type="text/css" href="css/override.css">
 	</head>
-	<body>
-		<h1>Sign Up</h1>
-		<p>Please fill this form to create an account.</p>
-		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-			<div class="<?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-				<label for="username" class="label">Username: </label>
-				<input type="text" name="username" value="<?php echo $username; ?>" class="input">
-				<span class="help"><?php echo $username_err; ?></span>
-			</div>
-			<div class="<?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-				<label for="password" class="label">Password: </label>
-				<input type="password" name="password" value="<?php echo $password; ?>" class="input">
-				<span class="help"><?php echo $password_err; ?></span>
-			</div>
-			<div class=" <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-				<label for="confirm_password" class="label">Confirm Password: </label>
-				<input type="password" name="confirm_password" value="<?php echo $confirm_password; ?>" class="input">
-				<span class="help-block"><?php echo $confirm_password_err; ?></span>
-			</div>
-			
-			<input type="submit" value="Submit" class="button">
-			<a class="button" href="index.php">Cancel</a>
-			
-			<p>Already have an account? <a href="index.php">Login here</a>.</p>
-		</form>
+	<body class="formpage">
+        <div class = "form-container">
+    		<h1 class="blieg">Sign Up</h1>
+    		<p>Please fill this form to create an account.</p>
+    		<form class = "field" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    			<div class="<?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+    				<label for="username" class="label blieg">Username: </label>
+    				<input type="text" name="username" value="<?php echo $username; ?>" class="input">
+    				<span class="help"><?php echo $username_err; ?></span>
+    			</div>
+    			<div class="<?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+    				<label for="password" class="label blieg">Password: </label>
+    				<input type="password" name="password" value="<?php echo $password; ?>" class="input">
+    				<span class="help"><?php echo $password_err; ?></span>
+    			</div>
+    			<div class=" <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+    				<label for="confirm_password" class="label blieg">Confirm Password: </label>
+    				<input type="password" name="confirm_password" value="<?php echo $confirm_password; ?>" class="input">
+    				<span class="help-block"><?php echo $confirm_password_err; ?></span>
+    			</div>
+                <div class = "field is-grouped">
+                    <div class = "control">
+        			 <a class="button is-light" href="index.php">Cancel</a>
+                    </div>
+                    <div class = "control">
+                        <input type="submit" value="Submit" class="button is-link">
+                    </div>
+                </div>
+    			
+    			<p>Already have an account? <a class = "button is-light" href="index.php">Login here</a></p>
+    		</form>
+        </div>
 	</body>
 </html>

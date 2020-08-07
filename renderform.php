@@ -56,7 +56,7 @@ function renderForm($id, $firstname, $lastname, $quote, $citation, $about, $webs
 				<div>* required</div>
 				<div class="field is-grouped">
 					<div class="control">
-						<a href="directory.php" class="button is-link is-light">Cancel</a>
+						<a href="directory.php" class="button is-light">Cancel</a>
 					</div>
 					<div class="control">
 						<input class="button is-link" type="submit" name="submit" value="Submit">
