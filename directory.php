@@ -13,8 +13,12 @@
 			<div class = "band">
 				<div class = "container">
 					<a href="index.php" id="homepagelink">
-						<h1 class = "blieg">CSC 174 - Students</h1>
-						<p>Hi, username!</p>
+						<h1 class = "blieg title">CSC 174 - Students</h1>
+						<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
+						<p class="blieg subtitle">Hi, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</p>
+					<?php } else { ?>
+						<p class="blieg subtitle">Welcome to the directory!</p>
+					<?php } ?>
 					</a>
 					<nav class="menu">
 						
