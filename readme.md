@@ -9,6 +9,7 @@
 ## Visual Design
 
 ## Technician
+Wireframe organizes users alphabetically. The website organizes students chronologically from when their entry was created.
 
 ## IA
 - Create wireframes and htmls
