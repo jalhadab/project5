@@ -39,12 +39,14 @@ function renderForm($id, $firstname, $lastname, $quote, $citation, $about, $webs
 					</div>
 				</div>
 				<div class="field">
-					<label><strong>Favorite Quote: *</strong></label>
-					<input type="text" name="quote" value="<?php echo $quote; ?>" required/><br>
-				</div>
-				<div class="field">
-					<label><strong>Who said the quote: *</strong></label>
-					<input type="text" name="citation" value="<?php echo $citation; ?>" required/><br>
+					<div class="control">
+						<label><strong>Favorite Quote: *</strong></label>
+						<input type="text" name="quote" value="<?php echo $quote; ?>" required/><br>
+					</div>
+					<div class="control">
+						<label><strong>Who said the quote: *</strong></label>
+						<input type="text" name="citation" value="<?php echo $citation; ?>" required/><br>
+					</div>
 				</div>
 				<div class="field">
 					<div class="control">
