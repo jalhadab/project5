@@ -2,7 +2,7 @@
 // Initialize the session
 session_start();
 // Check if the user is logged in, if not then redirect them to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 	header("location: directory.php");
 	exit;
 } ?>
@@ -20,23 +20,24 @@ if (isset($_POST['submit'])) {
 	if (is_numeric($_POST['id'])) {
 		// get form data, making sure it is valid
 		$id = $_POST['id'];
-		$quote = mysqli_real_escape_string($connection, htmlspecialchars($_POST['quote']));
 		$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['firstname']));
 		$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['lastname']));
 		$about = mysqli_real_escape_string($connection, htmlspecialchars($_POST['about']));
+		$quote = mysqli_real_escape_string($connection, htmlspecialchars($_POST['quote']));
+		$citation = mysqli_real_escape_string($connection, htmlspecialchars($_POST['citation']));
 		$website = mysqli_real_escape_string($connection, htmlspecialchars($_POST['website']));
 
 		// check that firstname/lastname fields are both filled in
-		if ($quote == '' || $firstname == '' || $lastname == '' || $about == '' || $website == '') {
+		if ($firstname == '' || $lastname == '' || $about == '' || $quote == '' || $citation == '' || $website == '') {
 			// generate error message
 			$error = 'ERROR: Please fill in all required fields!';
 
 			//error, display form
-			renderForm($id, $quote, $firstname, $lastname, $about, $website, $error, $formTitle);
+			renderForm($id, $firstname, $lastname, $quote, $citation, $about, $website, $error, $formTitle);
 
 		} else {
 			// save the data to the database
-			$result = mysqli_query($connection, "UPDATE seoul_directory SET quote='$quote', firstname='$firstname', lastname='$lastname', about='$about', website='$website' WHERE id='$id'");
+			$result = mysqli_query($connection, "UPDATE seoul_directory SET  firstname='$firstname', lastname='$lastname', about='$about', quote='$quote', citation='$citation', website='$website' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
 			header("Location: directory.php");
@@ -57,14 +58,16 @@ if (isset($_POST['submit'])) {
 		// check that the 'id' matches up with a row in the databse
 		if($row) {
 			// get data from db
-			$quote = $row['quote'];
+			
 			$firstname = $row['firstname'];
 			$lastname = $row['lastname'];
 			$about = $row['about'];
+			$quote = $row['quote'];
+			$citation = $row['citation'];
 			$website = $row['website'];
 
 			// show form
-			renderForm($id, $quote, $firstname, $lastname, $about, $website, '', $formTitle);
+			renderForm($id, $firstname, $lastname, $quote, $citation, $about, $website, '', $formTitle);
 		} else {
 			// if no match, display result
 			echo "No results!";
