@@ -103,7 +103,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 	<body class="z-pattern">
 		<header class="persistent">
 			<div class = "band">
-				<section class="container">
+				<section class="container paddis">
 					<div class="primary">
 						<!-- Primary Optical Area -->
 							<div class="boxer">CSC 174 - Summer 2020</div>
