@@ -1,19 +1,16 @@
 <?php
 // creates the edit record form
-function renderForm($id, $quote, $fullname, $bio, $link, $error)
-{
+function renderForm($id, $quote, $firstname, $lastname, $about, $website, $error, $formTitle) {
 ?>
-	<!doctype html>
-	<html>
-
+	<!DOCTYPE html>
+	<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Submit New Record</title>
+		<title><?php echo $formTitle; ?> Record</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 		<link rel="stylesheet" type="text/css" href="css/override.css">
 	</head>
-
 	<body class="formpage">
 		<?php
 		// if there are any errors, display them
@@ -22,53 +19,47 @@ function renderForm($id, $quote, $fullname, $bio, $link, $error)
 		}
 		?>
 		<div class="form-container">
-
-			<h1 class="blieg">Submit New Record</h1>
-			<form class = "field" action="" method="post">
+			<h1 class="blieg"><?php echo $formTitle; ?> Record</h1>
+			<form class="field" action="" method="post">
 				<input type="hidden" name="id" value="<?php echo $id; ?>">
 				<div class="field">
-					<strong>Favorite Quote: *</strong>
-					<input type="text" name="quote" value="<?php echo $quote; ?>" /><br>
+					<label><strong>Favorite Quote: *</strong></label>
+					<input type="text" name="quote" value="<?php echo $quote; ?>" required/><br>
 				</div>
-
 				<div class="field">
 					<div class="control">
-						<strong>Name: *</strong>
-						<input type="text" name="fullname" value="<?php echo $fullname; ?>" /><br>
+						<label><strong>First Name: *</strong></label>
+						<input type="text" name="firstname" value="<?php echo $firstname; ?>" required/><br>
+					</div>
+					<div class="control">
+						<label><strong>Last Name: *</strong></label>
+						<input type="text" name="lastname" value="<?php echo $lastname; ?>" required/><br>
 					</div>
 				</div>
-
 				<div class="field">
 					<div class="control">
-						<strong>Bio: *</strong>
-						<input type="text" class="textarea is-normal" name="bio" value="<?php echo $bio; ?>" /><br>
+						<label><strong>About: *</strong></label>
+						<textarea class="textarea is-normal" name="about" id="about" required><?php echo $about; ?></textarea><br>
 					</div>
 				</div>
-
-					
 				<div class="field">
 					<div class="control">
-						<strong>Website Link: *</strong> 
-						<input type="text" name="link" value="<?php echo $link; ?>" /><br>
+						<label><strong>Website: *</strong></label>
+						<input type="text" name="website" id="website" value="<?php echo $website; ?>" required/><br>
 					</div>
 				</div>
-
-					<div>* required</div>
-					<div class="field is-grouped">
-						<div class="control">
-							<a href="directory.php" class="button is-link is-light">Cancel</a>
-						</div>
-						<div class="control">
-							<input class="button is-link" type="submit" name="submit" value="Submit">
-						</div>
+				
+				<div>* required</div>
+				<div class="field is-grouped">
+					<div class="control">
+						<a href="directory.php" class="button is-link is-light">Cancel</a>
 					</div>
+					<div class="control">
+						<input class="button is-link" type="submit" name="submit" value="Submit">
+					</div>
+				</div>
 			</form>
-
 		</div>
-
 	</body>
-
-	</html>
-<?php
-}
-?>
+</html>
+<?php } ?>

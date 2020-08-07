@@ -1,4 +1,6 @@
 <?php
+	// Initialize the session
+	session_start();
 	// connect to the database
 	include('./inc/connect-db.php');
 	// get results from database
@@ -16,9 +18,10 @@
 					</a>
 					<nav class="menu">
 						<a class = "button" href="index.php">Home/Login</a>
-						<?php ?>
-						<a class = "button deleter" href="logout.php">Log Out</a>
-						<a class = "button" href="reset-password.php">Reset Password</a>
+						<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
+							<a class = "button deleter" href="logout.php">Log Out</a>
+							<a class = "button" href="reset-password.php">Reset Password</a>
+						<?php } ?>
 					</nav>
 				</div>
 			</div>
@@ -31,15 +34,17 @@
 					</header>
 					<?php while($row = mysqli_fetch_array($result)) { // loop through results of db query?>
 					<section class="dir-student space-below">
-						<q class="studentquote"><?php echo $row['special']; ?></q>
+						<q class="studentquote"><?php echo $row['quote']; ?></q>
 						<div>
 							<h3><?php echo $row['firstname']; ?> <?php echo $row['lastname']; ?></h3>
 							<p><?php echo $row['about']; ?></p>
 						</div>
 						<nav class="menu">
 							<a class="button" href="<?php echo $row['website']; ?>" target="_blank"><?php echo $row['firstname']; ?>'s Website</a>
-							<a class="button" href="edit.php?id=<?php echo htmlspecialchars($row['id']); ?>">Edit</a>
-							<a class="button deleter" onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo htmlspecialchars($row['id']); ?>">Delete</a>
+							<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
+								<a class="button" href="edit.php?id=<?php echo htmlspecialchars($row['id']); ?>">Edit</a>
+								<a class="button deleter" onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo htmlspecialchars($row['id']); ?>">Delete</a>
+							<?php } ?>
 						</nav>
 					</section>
 					<?php } ?>
