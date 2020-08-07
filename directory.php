@@ -17,7 +17,7 @@
 					<nav class="menu">
 						<a class = "button" href="index.php">Home/Login</a>
 						<?php ?>
-						<a class = "button deleter" href="">Log Out</a>
+						<a class = "button deleter" href="logout.php">Log Out</a>
 						<a class = "button" href="reset-password.php">Reset Password</a>
 					</nav>
 				</div>
