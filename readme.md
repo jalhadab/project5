@@ -1,6 +1,19 @@
 
 # Team Seoul
 
+## Team Members (Project 5)
+- Jaafar Al Hadab (Visual Designer)
+- Michael Bashner (Technician)
+- Qi Miao (IA)
+
+## Visual Design
+
+## Technician
+
+## IA
+- Create wireframes and htmls
+- Choreography: On the index page, following the z-pattern, users can login at the top right corner and everyone can directly go to see the student records by clicking "Go to Directory". On the student directory page, student records are sorted by an alpabetic order from top to the bottom. This page follows the F-pattern. By signing up on the hidden website register.php, users can edit or add new student records. After logged in, "Add a New Student Record" button can be easily seen on the top-right part when users start browsing the directory. Functions about personal account are all on the top and all in the header part. 
+
 ## Team Members (Project 4)
 - Molly Kilian
 - Leah Goodwin
