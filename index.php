@@ -1,3 +1,91 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Include config file
+require_once "./inc/connect-db.php";
+
+// Check if the user is already logged in, if yes then load the home page without login form
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+  // header("location: index.php");
+} else {
+	// Define variables and initialize with empty values
+	$username = $password = "";
+	$username_err = $password_err = "";
+
+	// Processing form data when form is submitted
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+		// Check if username is empty
+		if(empty(trim($_POST["username"]))){
+			$username_err = "Please enter username.";
+		} else{
+			$username = trim($_POST["username"]);
+		}
+		
+		// Check if password is empty
+		if(empty(trim($_POST["password"]))){
+			$password_err = "Please enter your password.";
+		} else{
+			$password = trim($_POST["password"]);
+		}
+		
+		// Validate credentials
+		if(empty($username_err) && empty($password_err)){
+			// Prepare a select statement
+			$sql = "SELECT id, username, password FROM users WHERE username = ?";
+			
+			if($stmt = mysqli_prepare($connection, $sql)){
+				// Bind variables to the prepared statement as parameters
+				mysqli_stmt_bind_param($stmt, "s", $param_username);
+				
+				// Set parameters
+				$param_username = $username;
+				
+				// Attempt to execute the prepared statement
+				if(mysqli_stmt_execute($stmt)){
+					// Store result
+					mysqli_stmt_store_result($stmt);
+					
+					// Check if username exists, if yes then verify password
+					if(mysqli_stmt_num_rows($stmt) == 1){                    
+						// Bind result variables
+						mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+						if(mysqli_stmt_fetch($stmt)){
+							if(password_verify($password, $hashed_password)){
+								// Password is correct, so start a new session
+								session_start();
+								
+								// Store data in session variables
+								$_SESSION["loggedin"] = true;
+								$_SESSION["id"] = $id;
+								$_SESSION["username"] = $username;                            
+								
+								// Redirect user to welcome page
+								header("location: index.php");
+							} else{
+								// Display an error message if password is not valid
+								$password_err = "The password you entered was not valid.";
+							}
+						}
+					} else{
+						// Display an error message if username doesn't exist
+						$username_err = "No account found with that username.";
+					}
+				} else{
+					echo "Oops! Something went wrong. Please try again later.";
+				}
+
+				// Close statement
+				mysqli_stmt_close($stmt);
+			}
+		}
+		
+		// Close connection
+		mysqli_close($connection);
+	}
+}
+?>
 <?php $customTitle="Home";?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,42 +110,50 @@
 							<div class="boxer">CSC 174 - Summer 2020</div>
 					</div>
 					
-					<form class="field">
+					<form class="field" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 						<!-- Strong Fallow Area -->
 						<div>Student login:</div>
 						<!-- TODO: Make this not a div so maybe a h#? -->
-						
-						<div class="field is-horizontal">
-							<div class="field-label">
-								<label for="username" class="label has-text-white">Username:</label>
-							</div>
-							<div class="field-body">
-								<div class="field">
-									<div class="control">
-										<input type="text" name="username" id="username" placeholder="Username" class="input">
+						<div class="field <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+							<div class="field is-horizontal">
+								<div class="field-label">
+									<label for="username" class="label has-text-white">Username:</label>
+								</div>
+								<div class="field-body">
+									<div class="field">
+										<div class="control">
+											<input type="text" name="username" id="username" placeholder="Username" class="input" value="<?php echo $username; ?>">
+										</div>
 									</div>
 								</div>
 							</div>
+							<p class="help is-pulled-right has-text-danger"><?php echo $username_err; ?></p>
 						</div>
-						<div class="field is-horizontal">
-							<div class="field-label">
-								<label for="passcode" class="label has-text-white">Password:</label>
-							</div>
-							<div class="field-body">
-								<div class="field">
-									<div class="control">
-										<input type="password" name="passcode" id="passcode" placeholder="Password" class="input">
+						<div class="field <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+							<div class="field is-horizontal">
+								<div class="field-label">
+									<label for="passcode" class="label has-text-white">Password:</label>
+								</div>
+								<div class="field-body">
+									<div class="field">
+										<div class="control">
+											<input type="password" name="password" id="passcode" placeholder="Password" class="input">
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>					
+							<p class="help is-pulled-right has-text-danger"><?php echo $password_err; ?></p>
+						</div>
 						<div class="field">
 							<div class="control is-pulled-right">
-								<a href="directory.php" class="button is-link">Go!</a>
+								<input type="submit" class="button is-link" value="Go!">
 							</div>
 						</div>
 					</form>
-					
+					<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
+						<a class = "button deleter" href="">Log Out</a>
+						<a class = "button" href="reset-password.php">Reset Password</a>
+					<?php } ?>
 				</section><!-- .container -->
 			</div>
 		</header>
