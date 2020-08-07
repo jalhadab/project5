@@ -7,20 +7,21 @@
 <?php $customTitle = "Directory"; ?>
 <?php include "inc/html-top.php"; ?>
 <body>
-	<header class="container">
-		<div>
-			<a href="index.php" id="homepagelink">
-				<h1 class="title">CSC 174 - Students</h1>
+	<header class="container navbar">
+		<div class="navbar-brand">
+			<a href="index.php" id="homepagelink" class="navbar-item">
+				<h1>CSC 174 - Students</h1>
 				<!-- TODO: show logged in user or generic greeting -->
-				<p class="subtitle">Hi, username!</p>
+				<p>Hi, username!</p>
 			</a>
 		</div>
-		<nav class="menu">
-			<a href="index.php">Login</a>
-			<a href="index.php">Home</a>
-			<a href="">Log Out</a>
-			<a href="reset-password.php">Reset Password</a>
-		</nav>
+		<div class="navbar-menu menu">
+			<div class="navbar-end">
+				<a class="navbar-item" href="index.php">Home/Login</a>
+				<a class="navbar-item" href="">Log Out</a>
+				<a class="navbar-item" href="reset-password.php">Reset Password</a>
+			</div>
+		</div>
 	</header>
 
 	<div class="background">
@@ -37,8 +38,8 @@
 						<p><?php echo $row['about']; ?></p>
 					</div>
 					<a href="<?php echo $row['website']; ?>" target="_blank"><?php echo $row['firstname']; ?>'s Website</a>
-					<a href="renderform.php">Edit</a>
-					<a href="">Delete</a>
+					<a class="button revise" href="edit.php?id=<?php echo htmlspecialchars($row['id']); ?>">Edit</a>
+					<a class="button delete" onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo htmlspecialchars($row['id']); ?>">Delete</a>
 				</section>
 			<?php } ?>
 				<footer>
