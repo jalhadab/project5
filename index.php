@@ -109,7 +109,12 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 						<!-- Primary Optical Area -->
 							<div class="boxer">CSC 174 - Summer 2020</div>
 					</div>
-					
+					<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
+						<div class="buttons">
+							<a class = "button deleter" href="">Log Out</a>
+							<a class = "button" href="reset-password.php">Reset Password</a>
+						</div>
+					<?php } else { ?>
 					<form class="field" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 						<!-- Strong Fallow Area -->
 						<div>Student login:</div>
@@ -150,9 +155,6 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 							</div>
 						</div>
 					</form>
-					<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
-						<a class = "button deleter" href="">Log Out</a>
-						<a class = "button" href="reset-password.php">Reset Password</a>
 					<?php } ?>
 				</section><!-- .container -->
 			</div>
