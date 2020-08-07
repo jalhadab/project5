@@ -7,19 +7,18 @@
 <?php $customTitle = "Directory"; ?>
 <?php include "inc/html-top.php"; ?>
 	<body>
-		<header class="container navbar">
-			<div class="navbar-brand">
-				<a href="index.php" id="homepagelink" class="navbar-item">
-					<h1>CSC 174 - Students</h1>
-					<!-- TODO: show logged in user or generic greeting -->
-					<p>Hi, username!</p>
-				</a>
-			</div>
-			<div class="navbar-menu menu">
-				<div class="navbar-end">
-					<a class="navbar-item" href="index.php">Home/Login</a>
-					<a class="navbar-item" href="">Log Out</a>
-					<a class="navbar-item" href="reset-password.php">Reset Password</a>
+		<header>
+			<div class = "band">
+				<div class = "container">
+					<a href="index.php" id="homepagelink">
+						<h1 class = "blieg">CSC 174 - Students</h1>
+						<p>Hi, username!</p>
+					</a>
+					<nav class="menu">
+						<a class = "button" href="index.php">Home/Login</a>
+						<a class = "button deleter" href="">Log Out</a>
+						<a class = "button" href="reset-password.php">Reset Password</a>
+					</nav>
 				</div>
 			</div>
 		</header>
@@ -39,7 +38,7 @@
 						<nav class="menu">
 							<a class="button" href="<?php echo $row['website']; ?>" target="_blank"><?php echo $row['firstname']; ?>'s Website</a>
 							<a class="button" href="edit.php?id=<?php echo htmlspecialchars($row['id']); ?>">Edit</a>
-							<a class="button" onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo htmlspecialchars($row['id']); ?>">Delete</a>
+							<a class="button deleter" onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo htmlspecialchars($row['id']); ?>">Delete</a>
 					</section>
 					<?php } ?>
 					<footer>
