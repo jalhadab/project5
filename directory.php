@@ -54,7 +54,7 @@
 							<h3><?php echo $row['firstname']; ?> <?php echo $row['lastname']; ?></h3>
 							<p><?php echo $row['about']; ?></p>
 						</div>
-						<nav class="menu">
+						<nav class="menu2">
 							<a class="button" href="<?php echo $row['website']; ?>" target="_blank"><?php echo $row['firstname']; ?>'s Website <i class="fa fa-external-link"></i></a>
 							<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
 								<a class="button" href="edit.php?id=<?php echo htmlspecialchars($row['id']); ?>">Edit</a>

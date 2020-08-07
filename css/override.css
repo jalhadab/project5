@@ -438,3 +438,13 @@ a:hover {
 .big-message {
 	color: #30475E;
 }
+
+.studentquote {
+	margin: auto;
+	width: 20%;
+	padding: 10px;
+	margin-right: 25px;
+}
+.menu2{
+	margin:auto;
+}
