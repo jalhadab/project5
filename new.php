@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 	$website = mysqli_real_escape_string($connection, htmlspecialchars($_POST['website']));
 
 	// check to make sure both fields are entered
-	if ($firstname == '' || $lastname == '' || $quote == '' || $ciation == '' || $about == '' || $website == '') {
+	if ($firstname == '' || $lastname == '' || $quote == '' || $citation == '' || $about == '' || $website == '') {
 		// generate error message
 		$error = 'ERROR: Please fill in all required fields!';
 
