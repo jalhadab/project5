@@ -1,6 +1,6 @@
 <?php
 // connect to the database
-include('connect-db.php');
+include('./inc/connect-db.php');
 
 // check if the 'id' variable is set in URL, and check that it is valid
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
@@ -8,7 +8,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 	$id = $_GET['id'];
 
 	// delete the entry
-	$result = mysqli_query($connection, "DELETE FROM directory WHERE id=$id");
+	$result = mysqli_query($connection, "DELETE FROM seoul_directory WHERE id=$id");
 
 	// redirect back to the homepage to see the results
 	header("Location: directory.php");
