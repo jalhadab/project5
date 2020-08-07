@@ -13,7 +13,7 @@ Wireframe organizes users alphabetically. The website organizes students chronol
 
 ## IA
 - Create wireframes and htmls
-- Choreography: On the index page, following the z-pattern, users can login at the top right corner and everyone can directly go to see the student records by clicking "Go to Directory". On the student directory page, student records are sorted by an alpabetic order from top to the bottom. This page follows the F-pattern. By signing up on the hidden website register.php, users can edit or add new student records. After logged in, "Add a New Student Record" button can be easily seen on the top-right part when users start browsing the directory. Functions about personal account are all on the top and all in the header part. 
+- Choreography: On the index page, following the z-pattern, users can login at the top right corner and everyone can directly go to see the student records by clicking "Go to Directory". On the student directory page, student records shown are sorted by an alpabetic order from top to the bottom.(Not technically for real, but it's the choreography for wireframe.) This page follows the F-pattern. By signing up on the hidden website register.php, users can edit or add new student records. After logged in, "Add a New Student Record" button can be easily seen on the top-right part when users start browsing the directory.(Not at the bottom like the wireframe, but this change makes sense for users logged in.) Functions about personal account are all on the top and in the header part. 
 
 ## Team Members (Project 4)
 - Molly Kilian
