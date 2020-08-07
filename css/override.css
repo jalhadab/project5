@@ -447,4 +447,5 @@ a:hover {
 }
 .menu2{
 	margin:auto;
+	display:inline-flex;
 }
