@@ -182,6 +182,5 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 				</div><!-- .container -->
 			</div>
 		</footer>
-		<?php include "inc/scripts.php" ?>
 	</body>
 </html>
