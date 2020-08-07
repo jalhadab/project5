@@ -6,17 +6,16 @@
     <div class = "band">
       <div class = "container">
         <a href="index.php" id="homepagelink">
-          <h1>CSC 174 - Students</h1>
+          <h1 class = "blieg">CSC 174 - Students</h1>
 
 
           <p>Hi, username!</p>
         </a>
         <nav class="menu">
-        <a href="index.php">Login</a>
-
-        <a href="index.php">Home</a>
-        <a href="">Log Out</a>
-        <a href="reset-password.php">Reset Password</a>
+        <a class = "button" href="index.php">Login</a>
+        <a class = "button" href="index.php">Home</a>
+        <a class = "button deleter" href="">Log Out</a>
+        <a class = "button" href="reset-password.php">Reset Password</a>
 
         </nav>
       </div>
@@ -39,9 +38,9 @@
               in Missouri. I am also an international student from Anhui, China. I am passionate about
               video games and many things associated with games since I was in my primary school.</p>
           </div>
-          <a href="http://csc174.org/lab05/bwu18/" target="_blank">Read more</a>
-          <a href="renderform.php">Edit</a>
-          <a href="">Delete</a>
+            <a class = "button" href="http://csc174.org/lab05/bwu18/" target="_blank">Read more<i class="fa fa-external-link"></i></a>
+            <a class = "button" href="renderform.php">Edit</a>
+            <a class = "button deleter" href="">Delete</a>
         </section>
         <section class="dir-student space-below">
           <div class="studentquote">"This is a quote too powerful to name."</div>
@@ -50,9 +49,9 @@
             <p>My name is Emely Rosa-Ortiz. I am a rising senior student in University of Rochester majoring
               in computer science. I am from New York City. I am passionate about coffee and latte art.</p>
           </div>
-          <a href="http://csc174.org/lab05/erosa4/" target="_blank">Read more</a>
-          <a href="renderform.php">Edit</a>
-          <a href="">Delete</a>
+          <a class = "button" href="http://csc174.org/lab05/erosa4/" target="_blank">Read more<i class="fa fa-external-link"></i></a>
+          <a class = "button" href="renderform.php">Edit</a>
+          <a class = "button deleter" href="">Delete</a>
         </section>
         <section class="dir-student">
           <div class="studentquote">"This is a quote too powerful to name."</div>
@@ -63,14 +62,10 @@
               States when I was 15 years old. I want to use my knowledge in HCI to help people who have
               disadvantages.</p>
           </div>
-          <a href="http://csc174.org/lab05/ekim69/" target="_blank">Read more</a>
-          <a href="renderform.php">Edit</a>
-          <a href="">Delete</a>
+          <a class = "button" href="http://csc174.org/lab05/ekim69/" target="_blank">Read more<i class="fa fa-external-link"></i></a>
+          <a class = "button" href="renderform.php">Edit</a>
+          <a class = "button deleter" href="">Delete</a>
         </section>
-
-        <footer>
-          <p>Add a New Student Record</p>
-        </footer>
         <!-- /* feed in other students here from the data form */ -->
         
 
@@ -97,12 +92,12 @@
                 <section class="dir-student space-below">
                   <div class="studentquote"><?php echo $row['quote']; ?></div>
                   <div>
-                    <h4><?php echo $row['fullname']; ?></h4>
+                    <h3><?php echo $row['fullname']; ?></h3>
                     <p><?php echo $row['bio']; ?></p>
                   </div>
-                  <a href="http://<?php echo $row['link']; ?>/" target="_blank">Read more</a>
-                  <a href="edit.php?id=<?php echo $row['id']; ?>" class="buttonslink">Edit</a></td>
-                  <a onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo $row['id']; ?>" class="buttonslight">Delete</a>
+                  <a class = "button" href="http://<?php echo $row['link']; ?>/" target="_blank">Read more<i class="fa fa-external-link"></i></a>
+                  <a class = "button" href="edit.php?id=<?php echo $row['id']; ?>">Edit</a></td>
+                  <a class = "button deleter" onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a>
                 </section>
                 <?php
                 // close the loop
@@ -121,6 +116,9 @@
               
             </table>
           </div>
+          <footer>
+          <p>Add a New Student Record</p>
+          </footer>
        
 </body>
 
