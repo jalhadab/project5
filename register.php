@@ -100,7 +100,6 @@ $customTitle="Sign Up";
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Project 5 Seoul Team">
 		<title><?php echo $customTitle;?> | Seoul Project 5</title>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 		<link rel="stylesheet" type="text/css" href="css/override.css">
@@ -112,17 +111,17 @@ $customTitle="Sign Up";
     		<form class = "field" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
     			<div class="<?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
     				<label for="username" class="label blieg">Username: </label>
-    				<input type="text" name="username" value="<?php echo $username; ?>" class="input">
+    				<input type="text" name="username" value="<?php echo $username; ?>" id="username" class="input">
     				<span class="help"><?php echo $username_err; ?></span>
     			</div>
     			<div class="<?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
     				<label for="password" class="label blieg">Password: </label>
-    				<input type="password" name="password" value="<?php echo $password; ?>" class="input">
+    				<input type="password" name="password" value="<?php echo $password; ?>" id="password" class="input">
     				<span class="help"><?php echo $password_err; ?></span>
     			</div>
     			<div class=" <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
     				<label for="confirm_password" class="label blieg">Confirm Password: </label>
-    				<input type="password" name="confirm_password" value="<?php echo $confirm_password; ?>" class="input">
+    				<input type="password" name="confirm_password" value="<?php echo $confirm_password; ?>" id="confirm_password" class="input">
     				<span class="help-block"><?php echo $confirm_password_err; ?></span>
     			</div>
                 <div class = "field is-grouped">
