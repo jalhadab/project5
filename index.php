@@ -8,6 +8,7 @@
 		<title><?php echo $customTitle;?> | Seoul Project 5</title>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 		<link rel="stylesheet" type="text/css" href="css/override.css">
 	</head>

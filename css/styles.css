@@ -1,25 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
-
-html{
+/**************************************
+		Base Styles
+**************************************/
+html {
 	background: rgb(0,0,0);
 	background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(21,163,255,1) 100%);
 	height: 100$;
-	height: 100%;
-}
-body {
-	font-family: 'Roboto', sans-serif;
-	margin: 0 auto;
-	color: #ECECEC;
-	background-image: url("../images/background.png");
-	background-repeat:repeat;
-	background-attachment: fixed;
 }
 
-h1 {
-	font-size: 50px;
-	font-weight: bold;
-	font-family: 'Montserrat', sans-serif;
-	margin-bottom: 20px;
+body {
+	margin: 0 auto;
 	color: #30475E;
 }
 
@@ -44,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 p, div {
 	font-family: "Roboto", sans-serif;
 	line-height: 1.75em;
+	border-radius: 5px;
 }
 
 img {
@@ -69,29 +59,9 @@ ol {
     border: 1px solid #ECECEC;
 }
 
-a{
-	color:#D9C5B2;
-}
-
-a:hover p{
-	color: #D9C5B2;
-}
-
-i{
-	margin-left: 3px;
-}
-
-.formpage h1{
-	margin-bottom: 30px;
-}
-
 /**************************************
 		Layout Styles
 **************************************/
-.container {
-	margin: 0 auto;
-	width: 100%;
-}
 
 article {
 	padding: 25px 25px 25px 25px;
@@ -99,6 +69,10 @@ article {
 
 .background a {
 		margin: auto;
+}
+
+footer {
+	padding-left: 25px;
 }
 
 form {
@@ -113,10 +87,20 @@ header .container, footer .container {
 	justify-content: space-between;
 }
 
+header div{
+	margin: 10px 0px 0px 25px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 1000px;
+}
+
 .dir-student {
 	display: flex;
 	background-color: #30475E;
-	border-radius: 15px;
+	border-radius: 5px;
 	justify-content: space-between;
 	padding: 20px 20px 20px 20px;
 	color: #ECECEC;
@@ -142,115 +126,23 @@ p {
 	justify-content: left;
 }
 
-.boxer{
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-.form-container{
-	width: 62.5%;
-	background-color: #30475E;
-	margin:auto;
-	height: 100%;
-	padding-top: 10%;
-	padding-left: 30px;
-	padding-right:  30px;
-}
-
-.formpage{
-	height: 100%;
-}
-
 /**************************************
 		Module Styles
 **************************************/
 
-.button.is-link {
+.container {
 	background-color: #FECB89;
-	color: #222831;
-	-webkit-box-shadow: 1px 1px 1px 1px #222831;
-	box-shadow: 1px 1px 1px 1px #222831;
 }
 
-.button.is-link:hover{
-	background-color: #C1A57B;
-	color: #ECECEC;
-}
-
-.button.is-link.is-light {
-	background-color: #ECECEC;
-	color: #222831;
-	-webkit-box-shadow: 1px 1px 1px 1px #222831;
-	box-shadow: 1px 1px 1px 1px #222831;
-}
-
-.button.is-link.is-light:hover {
-	background-color: #222831;
-	color: #ECECEC;
-}
-
-.formpage strong {
-		color: #ECECEC;
-}
 .z-pattern {
 	font-size: 2em;
-	overflow-x: hidden;
-    overflow-y: hidden;
 }
 
-.boxer{
-	font-size: 30px;
-}
-
-.band {
+.z-pattern .container {
 	background-color: #30475E;
 	color: #FECB89;
-	width:100%;
-	margin: 0;
-	opacity: 95%;
 }
 
-.silver{
-	background-color: #D9C5B2;
-	padding: 6px;
-}
-
-.white-back{
-	background: rgba(255, 255, 255, 0.65);
-}
-
-.blieg{
-	color:#D9C5B2;
-}
-
-.deleter{
-	background-color: #EE6C4D;
-}
-
-.dir-student a.deleter:hover, .menu a.deleter:hover {
-	background-color: #EA481F;
-}
-
-a.adder{
-	background-color:#30475E;
-	color: white;
-	border-radius: 7px;
-	margin-top: 20px;
-}
-
-a.adder:hover{
-	color:silver;
-}
-.menu a:hover{
-	background-color: silver;
-}
-
-.field .is-grouped{
-	justify-content: space-between;
-	margin-top: 30px;
-}
 
 table, th, td {
     border:none
@@ -339,13 +231,11 @@ a:hover {
 
 #homepagelink {
 	border: none;
-	background-color: #30475E;
-	padding-top:25px;
-	padding-bottom: 20px;
+	background-color: #FECB89;
 }
 
 #homepagelink:hover {
-	background-color: #30475E;
+	background-color: #FECB89;
 	color: #30475E;
 }
 
@@ -355,10 +245,10 @@ a:hover {
 }
 
 .dir-student h3 {
+	border-top: 1px solid #ECECEC;
 	border-bottom: 1px solid #ECECEC;
 	padding: 15px 15px 15px 15px;
 	margin: 0 auto;
-	margin-bottom: 20px;
 }
 
 .dir-student a {
@@ -369,6 +259,7 @@ a:hover {
 	text-align: center;
 	line-height: initial;
 	text-decoration: none;
+	color: currentcolor;
 	justify-self: flex-end;
 	margin-left: 20px;
 }
@@ -391,7 +282,7 @@ a:hover {
 .z-pattern .strong,
 .z-pattern .weak,
 .z-pattern .terminal {
-	margin: 3vh 5vw;
+	margin: 5vh 5vw;
 }
 
 .persistent {
@@ -433,8 +324,67 @@ a:hover {
 .primary div {
 		text-decoration: none;
 		font-family: "Montserrat", sans-serif;
+		font-size: 20px;
 }
 
 .big-message {
-	color: #30475E;
+	color: #FECB89;
 }
+
+.studentquote {
+	margin: auto;
+	width: 20%;
+	border: 1px solid #ECECEC;
+	padding: 10px;
+	margin-right: 25px;
+}
+
+/* Mobile Design */
+
+@media(max-width: 930px)
+{
+	article {
+		display: block;
+	}
+	
+	footer.persistent a {
+		font-size: 15px;
+	}
+	
+	.weak {
+		font-size: 10px;
+	}
+}
+
+
+@media(max-width: 760px)
+{
+	 .top
+  {
+	  display: block;
+  }
+}
+
+@media(max-width: 620px)
+{
+  
+	h2, h3, h4 {
+		margin: 15px 0px 15px 0px; 
+	}
+	
+	.background article {
+	  display: block;
+	}
+	
+	form {
+		max-width: 200px;
+	}
+	
+	.dir-student {
+		display: block;
+	}
+
+}
+
+
+
