@@ -103,13 +103,13 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 	<body class="z-pattern">
 		<header class="persistent">
 			<div class = "band">
-				<section class="container paddis">
+				<section class="container">
 					<div class="primary">
 						<!-- Primary Optical Area -->
 							<div class="boxer">CSC 174 - Summer 2020</div>
 					</div>
 					<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
-						<div class="buttons">
+						<div class="buttons paddis">
 							<a class = "button" href="reset-password.php">Reset Password</a>
 							<a class = "button deleter" href="logout.php">Log Out</a>
 						</div>
