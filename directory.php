@@ -15,7 +15,7 @@
 					<a href="index.php" id="homepagelink">
 						<h1 class = "blieg title">CSC 174 - Students</h1>
 						<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
-						<p class="blieg subtitle">Hi, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</p>
+						<p class="blieg subtitle">Hi, <?php echo htmlspecialchars($_SESSION["username"]); ?>! Want to make changes?</p>
 					<?php } else { ?>
 						<p class="blieg subtitle">Welcome to the directory!</p>
 					<?php } ?>
@@ -36,7 +36,12 @@
 		<div class="background">
 			<div class="container">
 				<article>
-					<header class="direct">
+					<aside class="is-pulled-right">
+						<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
+							<a href="new.php" class="button adder">Add a New Student Record</a>
+						<?php } ?>
+					</aside>
+					<header class="direct container">
 						<h2>Directory</h2>
 					</header>
 					<?php while($row = mysqli_fetch_array($result)) { // loop through results of db query?>
@@ -55,11 +60,6 @@
 						</nav>
 					</section>
 					<?php } ?>
-					<footer>
-						<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
-							<a href="new.php" class="button">Add a New Student Record</a>
-						<?php } ?>
-					</footer>
 				</article>
 			</div>
 		</div>
