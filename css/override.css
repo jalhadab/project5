@@ -21,12 +21,12 @@ body {
 }
 
 h1 {
-	font-size: 35px;
+	font-size: 50px;
 	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
 	margin-bottom: 20px;
 	text-shadow: 1px 1px 1px #ECECEC;
-	color: #FECB89;
+	color: #30475E;
 }
 
 h1, h2{
@@ -50,7 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 p, div {
 	font-family: "Roboto", sans-serif;
 	line-height: 1.75em;
-	border-radius: 5px;
 }
 
 img {
@@ -92,10 +91,6 @@ article {
 		margin: auto;
 }
 
-footer {
-	padding-left: 25px;
-}
-
 form {
 	margin: 1vh 1vw;
 	display: flex;
@@ -106,10 +101,6 @@ form {
 header .container, footer .container {
 	display: flex;
 	justify-content: space-between;
-}
-
-header div{
-	margin: 10px 0px 0px 25px;
 }
 
 .dir-student {
@@ -139,6 +130,13 @@ header {
 p {
 	max-width: 600px;
 	justify-content: left;
+}
+
+.boxer{
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 /**************************************
@@ -172,18 +170,29 @@ p {
 .formpage strong {
 		color: #ECECEC;
 }
-
-.container {
-	background-color: #FECB89;
-}
-
 .z-pattern {
 	font-size: 2em;
 }
 
-.z-pattern .container {
+.boxer{
+	font-size: 30px;
+}
+
+.band {
 	background-color: #30475E;
 	color: #FECB89;
+	width:100%;
+	margin: 0;
+	opacity: 95%;
+}
+
+.silver{
+	background-color: #D9C5B2;
+	padding: 6px;
+}
+
+.white-back{
+	background: rgba(255, 255, 255, 0.65);
 }
 
 
@@ -325,7 +334,7 @@ a:hover {
 .z-pattern .strong,
 .z-pattern .weak,
 .z-pattern .terminal {
-	margin: 5vh 5vw;
+	margin: 3vh 5vw;
 }
 
 .persistent {
@@ -367,11 +376,10 @@ a:hover {
 .primary div {
 		text-decoration: none;
 		font-family: "Montserrat", sans-serif;
-		font-size: 20px;
 }
 
 .big-message {
-	color: #FECB89;
+	color: #30475E;
 }
 
 .studentquote {
