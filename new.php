@@ -20,11 +20,9 @@ if (isset($_POST['submit'])) {
 	$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['lastname']));
 	$about = mysqli_real_escape_string($connection, htmlspecialchars($_POST['about']));
 	$website = mysqli_real_escape_string($connection, htmlspecialchars($_POST['website']));
-	echo $quote.$firstname.$lastname.$about.$website;
 
 	// check to make sure both fields are entered
 	if ($quote == '' || $firstname == '' || $lastname == '' || $about == '' || $website == '') {
-		echo $quote.$firstname.$lastname.$about.$website;
 		// generate error message
 		$error = 'ERROR: Please fill in all required fields!';
 
@@ -32,7 +30,6 @@ if (isset($_POST['submit'])) {
 		renderForm($id, $quote, $firstname, $lastname, $about, $website, $error, $formTitle);
 
 	} else {
-		echo $quote.$firstname.$lastname.$about.$website;
 		// save the data to the database
 		$result = mysqli_query($connection, "INSERT INTO seoul_directory (quote, firstname, lastname, about, website) VALUES ('$quote', '$firstname', '$lastname', '$about', '$website')");
 
@@ -40,7 +37,6 @@ if (isset($_POST['submit'])) {
 		header("Location: directory.php");
 	}
 } else {
-	echo $quote.$firstname.$lastname.$about.$website;
 	// if the form hasn't been submitted, display the form
 	renderForm('','','','','','', '', $formTitle);
 }
