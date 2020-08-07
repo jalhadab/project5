@@ -1,101 +1,23 @@
-/**************************************
+/*/**************************************
 			Base Styles
 **************************************/
 
-header a, #seoul {
-	color: #C1A57B; 
-	text-decoration: none;
-}
-
-header a p{
-	margin: 0 auto;
-}
 
 /**************************************
 			Layout Styles
 **************************************/
-
-.menu > ul {
-	display: flex;
-	justify-content: flex-end;
-	padding: 0;
-	list-style-type: none;
+.menu{
+	display:flex;
 }
 
 /**************************************
 			Module Styles
 **************************************/
-
-.menu {
-    font-family: "Roboto", sans-serif;
-}
-
-.menu li {
-	margin-left: .5vw;
-	margin-right: .5vw;
-	list-style: none;
-}
-
-.menu a{
-	border: 2px dotted #C1A57B;
-	text-decoration: none;
-	display: block;
-	color: #C1A57B;
-	background-color: #222831;
-	font-size: 20px;
-	text-align: center;
-	padding: 5px 15px;
-	right: 0;
-}
-
- #seoul {
-	border: 2px dotted #C1A57B;
-	text-decoration: none;
-	display: block;
-	color: #C1A57B;
-	background-color: #ECECEC;
-	font-size: 20px;
-	text-align: center;
-	padding: 5px 15px;
-	right: 0;
-}
-
-.menu a:hover {
-	background-color: #222831;
-	border: 2px solid;
-	color: #FECB89;
-}
-
-header.container {
-	border-bottom: 1px solid #C1A57B;
-}
-
-.submenu {
-	visibility: hidden;
-	opacity: 0;
-	position: absolute;
-	right: 0;
-	display: none;
-	z-index: 1;
-	padding: 0;
+.menu .button{
+	margin: auto;
+	margin-right: 10px;
 }
 
 /**************************************
 			State Styles
 **************************************/
-
-.menu li a.is-current {
-	color: #222831;
-	background-color: #C1A57B;
-}
-
-.menu li a.is-current:hover {
-	color: #30475E;
-}
-
-
-.menubtn:hover > .submenu, .submenu:hover {
-	visibility: visible;
-	opacity: 1;
-	display: block;
-}

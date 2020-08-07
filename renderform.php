@@ -21,10 +21,10 @@ function renderForm($id, $quote, $fullname, $bio, $link, $error)
 			echo '<div style="padding:4px; border:1px solid red; color:red;">' . $error . '</div>';
 		}
 		?>
-		<div class="container">
+		<div class="form-container">
 
-			<h1>Submit New Record</h1>
-			<form action="" method="post">
+			<h1 class="blieg">Submit New Record</h1>
+			<form class = "field" action="" method="post">
 				<input type="hidden" name="id" value="<?php echo $id; ?>">
 				<div class="field">
 					<strong>Favorite Quote: *</strong>
@@ -56,10 +56,10 @@ function renderForm($id, $quote, $fullname, $bio, $link, $error)
 					<div>* required</div>
 					<div class="field is-grouped">
 						<div class="control">
-							<input class="button is-link" type="submit" name="submit" value="Submit">
+							<a href="directory.php" class="button is-link is-light">Cancel</a>
 						</div>
 						<div class="control">
-							<a href="directory.php" class="button is-link is-light">Cancel</a>
+							<input class="button is-link" type="submit" name="submit" value="Submit">
 						</div>
 					</div>
 			</form>
