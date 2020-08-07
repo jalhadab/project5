@@ -52,7 +52,9 @@
 					</section>
 					<?php } ?>
 					<footer>
-						<p>Add a New Student Record</p>
+						<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
+							<a href="new.php" class="button">Add a New Student Record</a>
+						<?php } ?>
 					</footer>
 				</article>
 			</div>
