@@ -83,6 +83,10 @@ i{
 	margin-left: 3px;
 }
 
+.formpage h1{
+	margin-bottom: 30px;
+}
+
 /**************************************
 		Layout Styles
 **************************************/
@@ -145,6 +149,20 @@ p {
 	top: 50%;
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+}
+
+.form-container{
+	width: 62.5%;
+	background-color: #30475E;
+	margin:auto;
+	height: 100%;
+	padding-top: 10%;
+	padding-left: 30px;
+	padding-right:  30px;
+}
+
+.formpage{
+	height: 100%;
 }
 
 /**************************************
@@ -224,8 +242,16 @@ a.adder{
 	margin-top: 20px;
 }
 
-a.adder:hover, .menu a:hover{
+a.adder:hover{
 	color:silver;
+}
+.menu a:hover{
+	background-color: silver;
+}
+
+.field .is-grouped{
+	justify-content: space-between;
+	margin-top: 30px;
 }
 
 table, th, td {
