@@ -16,6 +16,7 @@
 					</a>
 					<nav class="menu">
 						<a class = "button" href="index.php">Home/Login</a>
+						<?php ?>
 						<a class = "button deleter" href="">Log Out</a>
 						<a class = "button" href="reset-password.php">Reset Password</a>
 					</nav>
@@ -39,6 +40,7 @@
 							<a class="button" href="<?php echo $row['website']; ?>" target="_blank"><?php echo $row['firstname']; ?>'s Website</a>
 							<a class="button" href="edit.php?id=<?php echo htmlspecialchars($row['id']); ?>">Edit</a>
 							<a class="button deleter" onclick="return confirm('Are you sure you want to delete: <?php echo $row["firstname"] . " " . $row["lastname"]; ?>?')" href="delete.php?id=<?php echo htmlspecialchars($row['id']); ?>">Delete</a>
+						</nav>
 					</section>
 					<?php } ?>
 					<footer>
