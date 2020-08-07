@@ -2,15 +2,8 @@
 // creates the edit record form
 function renderForm($id, $firstname, $lastname, $quote, $citation, $about, $website, $error, $formTitle) {
 ?>
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title><?php echo $formTitle; ?> Record</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-		<link rel="stylesheet" type="text/css" href="css/override.css">
-	</head>
+<?php $customTitle = $formTitle." Record"; ?>
+<?php include "inc/html-top.php"; ?>
 	<body class="formpage">
 		<?php
 		// if there are any errors, display them
