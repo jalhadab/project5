@@ -1,6 +1,6 @@
 <?php
 // creates the edit record form
-function renderForm($id, $quote, $firstname, $lastname, $about, $website, $error, $formTitle) {
+function renderForm($id, $firstname, $lastname, $quote, $citation, $about, $website, $error, $formTitle) {
 ?>
 	<!DOCTYPE html>
 	<html lang="en">
@@ -23,10 +23,6 @@ function renderForm($id, $quote, $firstname, $lastname, $about, $website, $error
 			<form class="field" action="" method="post">
 				<input type="hidden" name="id" value="<?php echo $id; ?>">
 				<div class="field">
-					<label><strong>Favorite Quote: *</strong></label>
-					<input type="text" name="quote" value="<?php echo $quote; ?>" required/><br>
-				</div>
-				<div class="field">
 					<div class="control">
 						<label><strong>First Name: *</strong></label>
 						<input type="text" name="firstname" value="<?php echo $firstname; ?>" required/><br>
@@ -41,6 +37,14 @@ function renderForm($id, $quote, $firstname, $lastname, $about, $website, $error
 						<label><strong>About: *</strong></label>
 						<textarea class="textarea is-normal" name="about" id="about" required><?php echo $about; ?></textarea><br>
 					</div>
+				</div>
+				<div class="field">
+					<label><strong>Favorite Quote: *</strong></label>
+					<input type="text" name="quote" value="<?php echo $quote; ?>" required/><br>
+				</div>
+				<div class="field">
+					<label><strong>Who said the quote: *</strong></label>
+					<input type="text" name="citation" value="<?php echo $citation; ?>" required/><br>
 				</div>
 				<div class="field">
 					<div class="control">

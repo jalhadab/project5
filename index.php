@@ -110,8 +110,8 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 					</div>
 					<?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){ ?>
 						<div class="buttons">
-							<a class = "button deleter" href="logout.php">Log Out</a>
 							<a class = "button" href="reset-password.php">Reset Password</a>
+							<a class = "button deleter" href="logout.php">Log Out</a>
 						</div>
 					<?php } else { ?>
 					<form class="field" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

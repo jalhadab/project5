@@ -27,7 +27,7 @@
 							<a class = "button" href="reset-password.php">Reset Password</a>
 							<a class = "button deleter" href="logout.php">Log Out</a>
 						<?php } else { ?>
-							<a class = "button" href="index.php">Home/Login</a>
+							<a class = "button" href="index.php">← Home/Login</a>
 						<?php } ?>
 					
 					</nav>
@@ -47,7 +47,9 @@
 					</header>
 					<?php while($row = mysqli_fetch_array($result)) { // loop through results of db query?>
 					<section class="dir-student space-below">
-						<q class="studentquote"><?php echo $row['quote']; ?></q>
+						<blockquote class="studentquote"><p>"<?php echo $row['quote']; ?>"</p>
+							 <footer><?php echo "--- ".$row['citation']; ?></footer>
+						</blockquote>
 						<div>
 							<h3><?php echo $row['firstname']; ?> <?php echo $row['lastname']; ?></h3>
 							<p><?php echo $row['about']; ?></p>
