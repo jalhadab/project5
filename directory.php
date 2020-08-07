@@ -2,23 +2,25 @@
 <?php include "inc/html-top.php" ?>
 
 <body>
-  <header class="container">
-    <div>
-      <a href="index.php" id="homepagelink">
-        <h1>CSC 174 - Students</h1>
+  <header>
+    <div class = "band">
+      <div class = "container">
+        <a href="index.php" id="homepagelink">
+          <h1>CSC 174 - Students</h1>
 
 
-        <p>Hi, username!</p>
-      </a>
+          <p>Hi, username!</p>
+        </a>
+        <nav class="menu">
+        <a href="index.php">Login</a>
+
+        <a href="index.php">Home</a>
+        <a href="">Log Out</a>
+        <a href="reset-password.php">Reset Password</a>
+
+        </nav>
+      </div>
     </div>
-    <nav class="menu">
-    <a href="index.php">Login</a>
-
-    <a href="index.php">Home</a>
-    <a href="">Log Out</a>
-    <a href="reset-password.php">Reset Password</a>
-
-    </nav>
   </header>
 
   <div class="background">
