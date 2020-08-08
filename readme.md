@@ -7,6 +7,7 @@
 - Qi Miao (IA)
 
 ## Visual Design
+Tried to keep with the techy, smart, navy-beige themes of the previous design. Mainly focuesd on increasing usability and designing an intuitive interface.
 
 ## Technician
 Wireframe organizes users alphabetically. The website organizes students chronologically from when their entry was created.
